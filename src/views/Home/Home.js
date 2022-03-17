@@ -29,7 +29,6 @@ const Home = () => {
             opacity: 0.2,
           },
         }}
-        // test
       >
         <Box position={'relative'} zIndex={2}>
           <Hero />
