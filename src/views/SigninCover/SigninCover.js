@@ -90,7 +90,7 @@ const SigninCover = () => {
                         component={LazyLoadImage}
                         effect="blur"
                         src={
-                          'https://assets.maccarianagency.com/backgrounds/img18.jpg'
+                          'https://assets.maccarianagency.com/backgrounds/img1.jpg'
                         }
                         height={{ xs: 'auto', md: 1 }}
                         maxHeight={{ xs: 300, md: 1 }}

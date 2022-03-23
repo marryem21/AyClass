@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
+import logoLight from '../../../../images/logomove.png';
+import logoDark from '../../../../images/logo.png';
 
 import { NavItem } from './components';
 
@@ -25,6 +27,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       justifyContent={'space-between'}
       alignItems={'center'}
       width={1}
+      
     >
       <Box
         display={'flex'}
@@ -32,16 +35,19 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         href="/"
         title="theFront"
         width={{ xs: 100, md: 120 }}
+        sx={{zoom:'140%'}}
       >
-        <Box
+        <Box 
+          
           component={'img'}
           src={
             mode === 'light' && !colorInvert
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+              ? logoLight
+              : logoDark
           }
           height={1}
           width={1}
+         
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
@@ -94,16 +100,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
           />
         </Box>
         <Box marginLeft={4}>
-          <Button
-            variant="contained"
-            color="primary"
-            component="a"
-            target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
-            size="large"
-          >
-            Buy now
-          </Button>
+     
         </Box>
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>

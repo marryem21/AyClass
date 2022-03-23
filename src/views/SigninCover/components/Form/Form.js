@@ -40,27 +40,20 @@ const Form = () => {
   return (
     <Box>
       <Box marginBottom={4}>
+  
         <Typography
-          sx={{
-            textTransform: 'uppercase',
-            fontWeight: 'medium',
-          }}
-          gutterBottom
-          color={'text.secondary'}
-        >
-          Login
-        </Typography>
-        <Typography
-          variant="h4"
+          variant="h2"
           sx={{
             fontWeight: 700,
           }}
         >
-          Welcome back
+          Learn your way...
         </Typography>
+
         <Typography color="text.secondary">
           Login to manage your account.
         </Typography>
+
       </Box>
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={4}>
