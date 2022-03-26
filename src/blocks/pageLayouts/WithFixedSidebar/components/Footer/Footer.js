@@ -18,7 +18,7 @@ const Footer = () => {
         >
           <Box display={'flex'} alignItems={'center'} color={'primary.dark'}>
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              
               width={40}
               height={40}
               viewBox="0 0 20 20"
@@ -98,7 +98,7 @@ const Footer = () => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+          &copy; AyClass. 2022, All rights reserved
         </Typography>
         <Typography
           align={'center'}

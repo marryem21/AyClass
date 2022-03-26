@@ -31,22 +31,20 @@ const Hero = () => {
             )} 0%)`,
           }}
         >
-          Learn new skills,
-        </Typography>
-        <Typography variant="h3" color="text.primary" sx={{ fontWeight: 700 }}>
-          gain more experience
+          Learn your way.
         </Typography>
       </Box>
       <Box marginBottom={3}>
         <Typography variant="h6" component="p" color="text.secondary">
-          Our mission is to spread education that is easy accessible and
-          everyone can learn.
+          We vowed to make education easier and more accessible
+          to everyone, everywhere by providing affordable
+          and personalized tutoring service.  
         </Typography>
       </Box>
       <Box display="flex" flexDirection={'column'} justifyContent={'center'}>
         <Box marginBottom={2}>
           <Typography variant="body1" component="p">
-            Join over 5000 subscribers for our newsletter
+            Look for the perfect tutor for you
           </Typography>
         </Box>
         <Box
@@ -67,7 +65,7 @@ const Hero = () => {
             <Box
               flex={'1 1 auto'}
               component={TextField}
-              label="Enter your email"
+              label="Enter a subject, a course, or a tutor's name"
               variant="outlined"
               color="primary"
               fullWidth
@@ -82,47 +80,12 @@ const Hero = () => {
               marginTop={{ xs: 2, sm: 0 }}
               marginLeft={{ sm: 2 }}
             >
-              Subscribe
+              Search
             </Box>
           </Box>
         </Box>
       </Box>
-      <Box marginTop={{ xs: 4, sm: 6, md: 8 }} textAlign={'left'}>
-        <Typography
-          variant="body1"
-          component="p"
-          color="text.primary"
-          sx={{ textTransform: 'uppercase' }}
-        >
-          Trusted by industry leading companies
-        </Typography>
-        <Box display="flex" flexWrap="wrap" justifyContent={'flex-start'}>
-          {[
-            'https://assets.maccarianagency.com/svg/logos/airbnb-original.svg',
-            'https://assets.maccarianagency.com/svg/logos/amazon-original.svg',
-            'https://assets.maccarianagency.com/svg/logos/fitbit-original.svg',
-            'https://assets.maccarianagency.com/svg/logos/netflix-original.svg',
-            'https://assets.maccarianagency.com/svg/logos/google-original.svg',
-            'https://assets.maccarianagency.com/svg/logos/paypal-original.svg',
-          ].map((item, i) => (
-            <Box maxWidth={90} marginTop={2} marginRight={4} key={i}>
-              <Box
-                component="img"
-                height={1}
-                width={1}
-                src={item}
-                alt="..."
-                sx={{
-                  filter:
-                    theme.palette.mode === 'dark'
-                      ? 'brightness(0) invert(0.7)'
-                      : 'none',
-                }}
-              />
-            </Box>
-          ))}
-        </Box>
-      </Box>
+    
     </Box>
   );
 
@@ -143,7 +106,7 @@ const Hero = () => {
         <Box
           component={LazyLoadImage}
           effect="blur"
-          src={'https://assets.maccarianagency.com/backgrounds/img2.jpg'}
+          src={'./img/home-hero.jpg'}
           height={{ xs: 'auto', md: 1 }}
           maxHeight={{ xs: 300, md: 1 }}
           width={1}

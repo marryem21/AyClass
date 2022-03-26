@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {
-  IndexView,
   Home as HomeView,
   Customers as CustomersView,
   HireUs as HireUsView,
@@ -12,7 +11,6 @@ import {
   CareerOpening as CareerOpeningView,
   ContactPage as ContactPageView,
   Coworking as CoworkingView,
-  Elearning as ElearningView,
   Enterprise as EnterpriseView,
   Service as ServiceView,
   WebBasic as WebBasicView,
@@ -58,7 +56,7 @@ import {
 const routes = [
   {
     path: '/',
-    renderer: (params = {}) => <IndexView {...params} />,
+    renderer: (params = {}) => <HomeView {...params} />,
   },
   {
     path: '/home',
@@ -95,10 +93,6 @@ const routes = [
   {
     path: '/coworking',
     renderer: (params = {}) => <CoworkingView {...params} />,
-  },
-  {
-    path: '/e-learning',
-    renderer: (params = {}) => <ElearningView {...params} />,
   },
   {
     path: '/enterprise',

@@ -30,15 +30,15 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         display={'flex'}
         component="a"
         href="/"
-        title="theFront"
-        width={{ xs: 100, md: 120 }}
+        title="AyClass"
+        width={{ xs: 200, md: 150 }}
       >
         <Box
           component={'img'}
           src={
             mode === 'light' && !colorInvert
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+              ? './img/logo2.png'
+              : './img/logo1.png'
           }
           height={1}
           width={1}
@@ -47,23 +47,23 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <NavItem
-            title={'Landings'}
-            id={'landing-pages'}
+            title={'Become Tutor'}
+            id={'become-tutor'}
             items={landingPages}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Company'}
-            id={'company-pages'}
+            title={'Subjects'}
+            id={'subjects'}
             items={companyPages}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Account'}
+            title={'About Us'}
             id={'account-pages'}
             items={accountPages}
             colorInvert={colorInvert}
@@ -71,7 +71,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Pages'}
+            title={'Sign Up'}
             id={'secondary-pages'}
             items={secondaryPages}
             colorInvert={colorInvert}
@@ -79,7 +79,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Blog'}
+            title={'Sign In'}
             id={'blog-pages'}
             items={blogPages}
             colorInvert={colorInvert}
@@ -87,24 +87,13 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Portfolio'}
+            title={'Contact Us'}
             id={'portfolio-pages'}
             items={portfolioPages}
             colorInvert={colorInvert}
           />
         </Box>
-        <Box marginLeft={4}>
-          <Button
-            variant="contained"
-            color="primary"
-            component="a"
-            target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
-            size="large"
-          >
-            Buy now
-          </Button>
-        </Box>
+        
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>
         <Button

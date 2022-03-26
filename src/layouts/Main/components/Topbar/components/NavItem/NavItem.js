@@ -6,7 +6,6 @@ import { alpha, useTheme } from '@mui/material/styles';
 import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const NavItem = ({ title, id, items, colorInvert = false }) => {
   const theme = useTheme();
@@ -47,15 +46,7 @@ const NavItem = ({ title, id, items, colorInvert = false }) => {
         >
           {title}
         </Typography>
-        <ExpandMoreIcon
-          sx={{
-            marginLeft: theme.spacing(1 / 4),
-            width: 16,
-            height: 16,
-            transform: openedPopoverId === id ? 'rotate(180deg)' : 'none',
-            color: linkColor,
-          }}
-        />
+        
       </Box>
       <Popover
         elevation={3}
