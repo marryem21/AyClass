@@ -25,24 +25,20 @@ module.exports = {
   ],
   'rules': {
     'indent': [
-      'error',
+      'warn',
       2,
       { 'SwitchCase': 1 },
     ],
-    'linebreak-style': [
-      'error',
-      'windows',
-    ],
     'quotes': [
-      'error',
+      'warn',
       'single',
     ],
     'semi': [
-      'error',
+      'warn',
       'always',
     ],
     'comma-dangle': [
-      'error',
+      'warn',
       'only-multiline',
     ],
   },
