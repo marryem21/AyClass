@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Form } from './components';
+import girl from '../../images/girlLaugh.jpg';
 
 const SigninCover = () => {
   const theme = useTheme();
@@ -15,7 +16,7 @@ const SigninCover = () => {
         sx={{
           width: 1,
           height: 1,
-          overflow: 'hidden',
+          overflow: 'hidden'
         }}
       >
         <Container paddingX={0} paddingY={0} maxWidth={{ sm: 1, md: 1236 }}>
@@ -89,9 +90,7 @@ const SigninCover = () => {
                       <Box
                         component={LazyLoadImage}
                         effect="blur"
-                        src={
-                          'https://assets.maccarianagency.com/backgrounds/img18.jpg'
-                        }
+                        src={girl}
                         height={{ xs: 'auto', md: 1 }}
                         maxHeight={{ xs: 300, md: 1 }}
                         width={1}

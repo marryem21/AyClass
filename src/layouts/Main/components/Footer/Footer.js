@@ -1,15 +1,15 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
+import logoLight from '../../../../images/logomove.png';
+import logoDark from '../../../../images/logo.png';
+import Link from '@mui/material/Link';
 
 const Footer = () => {
   const theme = useTheme();
   const { mode } = theme.palette;
-
   return (
     <Grid container spacing={2}>
       <Grid item xs={12}>
@@ -24,56 +24,37 @@ const Footer = () => {
             display={'flex'}
             component="a"
             href="/"
-            title="theFront"
+            title="AyClass"
             width={80}
           >
-            <Box
+            <Box  
               component={'img'}
               src={
                 mode === 'light'
-                  ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                  : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+                  ? logoLight
+                  : logoDark
               }
               height={1}
               width={1}
             />
           </Box>
-          <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
-            <Box marginTop={1} marginRight={2}>
-              <Link
-                underline="none"
-                component="a"
-                href="/"
-                color="text.primary"
-                variant={'subtitle2'}
-              >
-                Home
-              </Link>
-            </Box>
-            <Box marginTop={1} marginRight={2}>
-              <Link
-                underline="none"
-                component="a"
-                href="/docs/introduction"
-                color="text.primary"
-                variant={'subtitle2'}
-              >
-                Documentation
-              </Link>
-            </Box>
-            <Box marginTop={1}>
-              <Button
-                variant="outlined"
-                color="primary"
-                component="a"
-                target="blank"
-                href="https://mui.com/store/items/the-front-landing-page/"
-                size="small"
-              >
-                Purchase now
-              </Button>
-            </Box>
-          </Box>
+          <Link
+            variant={'body2'}
+            underline="none"
+            component="a"
+            href="#"
+            color="text.primary"
+          >
+            <Typography
+              align={'center'}
+              variant={'subtitle8'}
+              color="text.secondary"
+              gutterBottom
+              fontWeight={'light'}  
+            >  
+              About Us | Contact Us
+            </Typography>
+          </Link>
         </Box>
       </Grid>
       <Grid item xs={12}>
@@ -82,22 +63,23 @@ const Footer = () => {
           variant={'subtitle2'}
           color="text.secondary"
           gutterBottom
+          fontWeight={'light'}  
         >
-          &copy; theFront. 2021, Maccarian. All rights reserved
+          &copy; AyClass. 2021 All rights reserved
         </Typography>
+        <div style={{ borderTop: '0.5px solid #fff',borderColor:'grey' , margin:'10px' }}></div>
         <Typography
           align={'center'}
           variant={'caption'}
           color="text.secondary"
           component={'p'}
         >
-          When you visit or interact with our sites, services or tools, we or
-          our authorised service providers may use cookies for storing
-          information to help provide you with a better, faster and safer
-          experience and for marketing purposes.
+          We vowed to make education easier and accessible to everyone,everywhere 
+          by providing affordable and personalized tutoring services.
         </Typography>
       </Grid>
     </Grid>
+  
   );
 };
 
