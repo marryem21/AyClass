@@ -3,8 +3,6 @@ export const light = {
     main: '#F2F2F2',
     dark: '#F2F2F2',
   },
-  cardShadow: 'rgba(23, 70, 161, .11)',
-  mode: 'light',
 
   primary: {
     main: '#30306C', //buttons and buttons text
@@ -44,14 +42,14 @@ export const dark = {
   mode: 'dark',
   primary: {
     main: '#30306C', //buttons and buttons text
-    // light: '#20AB20',
+    light: '#20AB20',//still did not detect it
     dark: '#202049', //button hover
     contrastText: '#F2F2F2',//text on buttons
   },
   secondary: {
-    light: '#FFEA41',
-    main: '#FFE102',
-    dark: '#DBBE01',
+    main: '#F2F2F2',//link,secondary text and outlined buttons and their text
+    light: '#0000FF',//still not detected
+    dark: '#DBBE01',//not detected
     contrastText: 'rgba(0, 0, 0, 0.87)',
   },
   text: {

@@ -156,9 +156,9 @@ const Form = () => {
                   Already have an account?{' '}
                   <Link
                     component={'a'}
-                    color={'primary'}
                     href={'/signin-cover'}
                     underline={'none'}
+                    color={'alternate'}
                   >
                     Login.
                   </Link>
@@ -184,9 +184,9 @@ const Form = () => {
               By clicking "Sign up" button you agree with our{' '}
               <Link
                 component={'a'}
-                color={'primary'}
                 href={'/company-terms'}
                 underline={'none'}
+                color={'alternate'}
               >
                 company terms and conditions.
               </Link>

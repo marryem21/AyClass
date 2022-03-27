@@ -40,20 +40,17 @@ const Form = () => {
   return (
     <Box>
       <Box marginBottom={4}>
-  
         <Typography
           variant="h2"
           sx={{
-            fontWeight: 700,
+            fontWeight: 900,
           }}
         >
           Learn your way...
         </Typography>
-
-        <Typography color="text.secondary">
+        <Typography  color="text.secondary">
           Login to manage your account.
         </Typography>
-
       </Box>
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={4}>
@@ -89,7 +86,7 @@ const Form = () => {
               <Typography variant={'subtitle2'}>
                 <Link
                   component={'a'}
-                  color={'primary'}
+                  color={'alternate'}
                   href={'/password-reset-cover'}
                   underline={'none'}
                 >
@@ -124,7 +121,7 @@ const Form = () => {
                   Don't have an account yet?{' '}
                   <Link
                     component={'a'}
-                    color={'primary'}
+                    color={'alternate'}
                     href={'/signup-cover'}
                     underline={'none'}
                   >

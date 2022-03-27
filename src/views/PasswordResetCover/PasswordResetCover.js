@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Form } from './components';
+import girl from '../../images/girlLaugh.jpg';
 
 const PasswordResetCover = () => {
   const theme = useTheme();
@@ -89,9 +90,7 @@ const PasswordResetCover = () => {
                       <Box
                         component={LazyLoadImage}
                         effect="blur"
-                        src={
-                          'https://assets.maccarianagency.com/backgrounds/img15.jpg'
-                        }
+                        src= {girl}
                         height={{ xs: 'auto', md: 1 }}
                         maxHeight={{ xs: 300, md: 1 }}
                         width={1}

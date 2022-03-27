@@ -9,10 +9,11 @@ const getTheme = (mode, themeToggler) =>
       palette: mode === 'light' ? light : dark,
       shadows: shadows(mode),
       typography: {
-        fontFamily: '"Inter", sans-serif',
+        fontFamily: 'poppins',
+        fontWeight: 'bold',
         button: {
           textTransform: 'none',
-          fontWeight: 'medium',
+          fontWeight: 'bold',
         },
       },
       zIndex: {
