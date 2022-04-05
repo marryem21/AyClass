@@ -41,24 +41,14 @@ const Form = () => {
     <Box>
       <Box marginBottom={4}>
         <Typography
+          variant="h2"
           sx={{
-            textTransform: 'uppercase',
-            fontWeight: 'medium',
-          }}
-          gutterBottom
-          color={'text.secondary'}
-        >
-          Login
-        </Typography>
-        <Typography
-          variant="h4"
-          sx={{
-            fontWeight: 700,
+            fontWeight: 900,
           }}
         >
-          Welcome back
+          Learn your way...
         </Typography>
-        <Typography color="text.secondary">
+        <Typography  color="text.secondary">
           Login to manage your account.
         </Typography>
       </Box>
@@ -96,7 +86,7 @@ const Form = () => {
               <Typography variant={'subtitle2'}>
                 <Link
                   component={'a'}
-                  color={'primary'}
+                  color={'alternate'}
                   href={'/password-reset-cover'}
                   underline={'none'}
                 >
@@ -131,7 +121,7 @@ const Form = () => {
                   Don't have an account yet?{' '}
                   <Link
                     component={'a'}
-                    color={'primary'}
+                    color={'alternate'}
                     href={'/signup-cover'}
                     underline={'none'}
                   >

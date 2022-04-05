@@ -2,11 +2,10 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Form } from './components';
-
+import happyGuy from '../../images/happyGuy.jpg';
 const SignupCover = () => {
   const theme = useTheme();
   return (
@@ -89,9 +88,7 @@ const SignupCover = () => {
                       <Box
                         component={LazyLoadImage}
                         effect="blur"
-                        src={
-                          'https://assets.maccarianagency.com/backgrounds/img4.jpg'
-                        }
+                        src={happyGuy}
                         height={{ xs: 'auto', md: 1 }}
                         maxHeight={{ xs: 300, md: 1 }}
                         width={1}

@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
+import logoLight from '../../../../images/logomove.png';
+import logoDark from '../../../../images/logo.png';
 
 import { NavItem } from './components';
 
@@ -25,6 +27,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       justifyContent={'space-between'}
       alignItems={'center'}
       width={1}
+      
     >
       <Box
         display={'flex'}
@@ -32,16 +35,19 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         href="/"
         title="AyClass"
         width={{ xs: 200, md: 150 }}
+        sx={{zoom:'140%'}}
       >
-        <Box
+        <Box 
+          
           component={'img'}
           src={
             mode === 'light' && !colorInvert
-              ? './img/logo2.png'
-              : './img/logo1.png'
+              ? logoLight
+              : logoDark
           }
           height={1}
           width={1}
+         
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
@@ -93,7 +99,6 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             colorInvert={colorInvert}
           />
         </Box>
-        
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>
         <Button

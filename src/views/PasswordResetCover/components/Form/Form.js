@@ -91,6 +91,7 @@ const Form = () => {
                   component={Link}
                   href={'/signin-cover'}
                   fullWidth
+                  color={'secondary'}
                 >
                   Back to login
                 </Button>
