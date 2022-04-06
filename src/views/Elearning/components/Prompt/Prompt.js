@@ -3,16 +3,15 @@ import React from 'react';
 import { alpha, useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 
 const mock = [
   {
-    title: 'Built for developers',
+    title: 'Built for students',
     subtitle:
-      'theFront is built to make your life easier. Variables, build tooling, documentation, and reusable components.',
+      'AyClass is built to make your life easier. Multiple categories, unique courses, documentation, and exceptional tutors.',
     icon: (
       <svg
         height={24}
@@ -34,7 +33,7 @@ const mock = [
   {
     title: 'Designed to be modern',
     subtitle:
-      'Designed with the latest design trends in mind. theFront feels modern, minimal, and beautiful.',
+      'The educational experience with AyClass is one that caters to modern and new standards.',
     icon: (
       <svg
         height={24}
@@ -54,9 +53,9 @@ const mock = [
     ),
   },
   {
-    title: 'Documentation for everything',
+    title: 'Documentation & recources for everything',
     subtitle:
-      'We\'ve written extensive documentation for components and tools, so you never have to reverse engineer anything.',
+      'We\'ve written extensive documentation for courses and tools, so you never have to look far.',
     icon: (
       <svg
         height={24}
@@ -77,8 +76,9 @@ const mock = [
   },
 ];
 
-const Hero = () => {
+const Prompt = () => {
   const theme = useTheme();
+  // eslint-disable-next-line no-unused-vars
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -92,12 +92,10 @@ const Hero = () => {
             color="text.primary"
             align={'center'}
             sx={{
-              fontWeight: 700,
+              fontWeight: 500,
             }}
           >
-            Welcome to theFront.
-            <br />
-            Develop anything your business needs.
+            Why should you join us?
           </Typography>
           <Typography
             variant="h6"
@@ -106,44 +104,10 @@ const Hero = () => {
             sx={{ fontWeight: 400 }}
             align={'center'}
           >
-            Build a beautiful, modern website with flexible, fully customizable,
-            atomic MUI components.
+            AyClass provides you the full learning experience.
           </Typography>
         </Box>
-        <Box
-          display="flex"
-          flexDirection={{ xs: 'column', sm: 'row' }}
-          alignItems={{ xs: 'stretched', sm: 'center' }}
-          justifyContent={'center'}
-        >
-          <Button
-            component={'a'}
-            variant="contained"
-            color="primary"
-            size="large"
-            fullWidth={isMd ? false : true}
-            href={'https://mui.com/store/items/the-front-landing-page/'}
-            target={'_blank'}
-          >
-            Purchase now
-          </Button>
-          <Box
-            marginTop={{ xs: 2, sm: 0 }}
-            marginLeft={{ sm: 2 }}
-            width={{ xs: '100%', md: 'auto' }}
-          >
-            <Button
-              component={'a'}
-              href={'/docs/introduction'}
-              variant="outlined"
-              color="primary"
-              size="large"
-              fullWidth={isMd ? false : true}
-            >
-              View documentation
-            </Button>
-          </Box>
-        </Box>
+        
       </Box>
       <Grid container spacing={2}>
         {mock.map((item, i) => (
@@ -184,4 +148,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Prompt;

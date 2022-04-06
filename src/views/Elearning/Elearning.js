@@ -8,6 +8,7 @@ import {
   Categories,
   Courses,
   Hero,
+  Prompt,
   PromoNumbers,
   Reviews,
   Subscription,
@@ -21,6 +22,10 @@ const Elearning = () => {
       <Hero />
       <Container>
         <PromoNumbers />
+        <Container>
+          <Divider />
+        </Container>
+        <Prompt />
       </Container>
       <Box
         position={'relative'}

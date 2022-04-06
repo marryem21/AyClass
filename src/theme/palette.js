@@ -51,10 +51,12 @@ export const dark = {
     light: '#0000FF',//still not detected
     dark: '#DBBE01',//not detected
     contrastText: 'rgba(0, 0, 0, 0.87)',
+    font: 'poppins',
   },
   text: {
     primary: '#F2F2F2',
     secondary: '#AEB0B4',
+    font: 'poppins',
   },
   divider: 'rgba(255, 255, 255, 0.12)',
   background: {
