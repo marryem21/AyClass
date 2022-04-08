@@ -8,22 +8,31 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import * as AyClassApi from '../../../../utilities/AyClassApiClient';
+import {useParams} from 'react-router-dom';
 
 const validationSchema = yup.object({
-  email: yup
+  password: yup
     .string()
-    .trim()
-    .email('Please enter a valid email address')
-    .required('Email is required.'),
+    .required('Please specify your password')
+    .min(8, 'The password should have at minimum length of 8'),
 });
 
 const Form = () => {
+  let params = useParams();
+
   const initialValues = {
-    email: '',
+    password: '',
   };
 
-  const onSubmit = (values) => {
-    return values;
+  const onSubmit = async (value) => {
+    let response = await AyClassApi.ChangePassword(value.password,params['*']);
+    if(response.success){
+      console.log(response.body);
+    }
+    else{
+      console.log(response.body);
+    }
   };
 
   const formik = useFormik({

@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import Box from '@mui/material/Box';
@@ -41,12 +42,13 @@ const Form = () => {
     email: '',
     password: '',
   };
+  const navigate = useNavigate();
 
   const onSubmit = async (values) => {
     // return values; // call the api
     let response = await AyClassApi.RegisterNewStudent(values);
-    if(response.ok){
-      console.log('success');
+    if(response.success){
+      navigate('/signin-simple');
     }
     else{
       console.log(response.body);

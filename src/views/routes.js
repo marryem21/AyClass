@@ -212,7 +212,7 @@ const routes = [
     renderer: (params = {}) => <BlogReachViewView {...params} />,
   },
   {
-    path:'/password-change',
+    path:'/password-change/*',
     renderer: (params = {}) => <PasswordChangeView {...params} />
   },
   {

@@ -8,6 +8,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import * as AyClassApi from '../../../../utilities/AyClassApiClient';
 
 const validationSchema = yup.object({
   email: yup
@@ -22,8 +23,14 @@ const Form = () => {
     email: '',
   };
 
-  const onSubmit = (values) => {
-    return values;
+  const onSubmit = async (value) => {
+    let response = await AyClassApi.ForgotPassword(value.email);
+    if(response.success){
+      console.log(response.body);
+    }
+    else{
+      console.log(response.body);
+    }
   };
 
   const formik = useFormik({
