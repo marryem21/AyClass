@@ -38,6 +38,7 @@ export { default as BlogSearch } from './BlogSearch';
 export { default as BlogNewsroom } from './BlogNewsroom';
 export { default as BlogArticle } from './BlogArticle';
 export { default as BlogReachView } from './BlogReachView';
+export {default as PasswordChange} from './PasswordChange';
 export { default as PasswordResetCover } from './PasswordResetCover';
 export { default as PasswordResetSimple } from './PasswordResetSimple';
 export { default as SigninSimple } from './SigninSimple';

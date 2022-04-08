@@ -39,6 +39,7 @@ import {
   BlogNewsroom as BlogNewsroomView,
   BlogArticle as BlogArticleView,
   BlogReachView as BlogReachViewView,
+  PasswordChange as PasswordChangeView,
   PasswordResetCover as PasswordResetCoverView,
   PasswordResetSimple as PasswordResetSimpleView,
   SigninSimple as SigninSimpleView,
@@ -209,6 +210,10 @@ const routes = [
   {
     path: '/blog-reach-view',
     renderer: (params = {}) => <BlogReachViewView {...params} />,
+  },
+  {
+    path:'/password-change',
+    renderer: (params = {}) => <PasswordChangeView {...params} />
   },
   {
     path: '/password-reset-cover',
