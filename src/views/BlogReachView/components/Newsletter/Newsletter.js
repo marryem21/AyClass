@@ -14,7 +14,7 @@ const Newsletter = () => {
           align={'center'}
           gutterBottom
         >
-          Get our stories delivered
+          Get our hottest courses & tutors delivered
         </Typography>
         <Typography
           variant={'h6'}

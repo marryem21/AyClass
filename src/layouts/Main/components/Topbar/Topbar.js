@@ -53,50 +53,56 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <NavItem
-            title={'Become Tutor'}
+            title={'Become tutor'}
             id={'become-tutor'}
             items={landingPages}
             colorInvert={colorInvert}
+            href={'#'}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Subjects'}
+            title={'Book tutor'}
             id={'subjects'}
             items={companyPages}
             colorInvert={colorInvert}
+            navlinkto={'/blog-reach-view'}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'About Us'}
+            title={'About us'}
             id={'account-pages'}
             items={accountPages}
             colorInvert={colorInvert}
+            href={'#'}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Sign Up'}
+            title={'Signup'}
             id={'secondary-pages'}
             items={secondaryPages}
             colorInvert={colorInvert}
+            href={'/signup-cover'}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Sign In'}
+            title={'Signin'}
             id={'blog-pages'}
             items={blogPages}
             colorInvert={colorInvert}
+            href={'/signin-cover'}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Contact Us'}
+            title={'Contact us'}
             id={'portfolio-pages'}
             items={portfolioPages}
             colorInvert={colorInvert}
+            href={'#'}
           />
         </Box>
       </Box>

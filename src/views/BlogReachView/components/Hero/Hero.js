@@ -12,7 +12,7 @@ const Hero = () => {
       position={'relative'}
       sx={{
         backgroundImage:
-          'url("https://assets.maccarianagency.com/backgrounds/img1.jpg")',
+          'url("https://www.superprof.co.uk/blog/wp-content/uploads/2018/06/teaching-online.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         marginTop: -13,
@@ -51,7 +51,7 @@ const Hero = () => {
                 color: theme.palette.common.white,
               }}
             >
-              Newsroom
+              Book a Tutor!
             </Typography>
           </Box>
           <Box>
@@ -62,7 +62,7 @@ const Hero = () => {
                 color: theme.palette.common.white,
               }}
             >
-              Latest updates and Hand-picked resources.
+              Search for tutors.
             </Typography>
           </Box>
         </Box>

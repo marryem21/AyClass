@@ -8,11 +8,11 @@ import Chip from '@mui/material/Chip';
 
 const mock = [
   'Business',
-  'Strategy',
-  'Health',
-  'Creative',
-  'Environment',
-  'Stories',
+  'IT',
+  'Design',
+  'Literature',
+  'Mathematics',
+  'Physics',
 ];
 
 const SearchBox = () => {
@@ -38,7 +38,7 @@ const SearchBox = () => {
                 variant="outlined"
                 color="primary"
                 size="medium"
-                placeholder="Search an article"
+                placeholder="Search a tutor, course or subject"
                 fullWidth
                 InputProps={{
                   startAdornment: (
@@ -71,6 +71,7 @@ const SearchBox = () => {
                 variant="contained"
                 color="primary"
                 size="medium"
+                href={'/blog-search'}
                 fullWidth
               >
                 Search

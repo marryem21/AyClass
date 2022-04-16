@@ -4,7 +4,7 @@ import { useTheme } from '@mui/material/styles';
 
 import Main from 'layouts/Main';
 import Container from 'components/Container';
-import { Breadcrumb, Newsletter, Result } from './components';
+import { Breadcrumb, Result } from './components';
 
 const BlogSearch = () => {
   const theme = useTheme();
@@ -47,9 +47,6 @@ const BlogSearch = () => {
             d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"
           ></path>
         </Box>
-        <Container>
-          <Newsletter />
-        </Container>
       </Box>
     </Main>
   );

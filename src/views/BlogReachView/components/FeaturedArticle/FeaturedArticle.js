@@ -12,14 +12,14 @@ import Chip from '@mui/material/Chip';
 const mock = {
   image: 'https://assets.maccarianagency.com/backgrounds/img4.jpg',
   description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    'Meet Anwer Ayed, our tutor of the month!',
   title:
-    'Labore et dolore magna aliqua. Eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    'Tutor of the month - April 2022',
   author: {
-    name: 'Chary Smith',
+    name: 'AyClass Admin',
     avatar: 'https://assets.maccarianagency.com/avatars/img6.jpg',
   },
-  date: '22 Nov',
+  date: '10 April',
 };
 
 const FeaturedArticle = () => {
@@ -77,7 +77,7 @@ const FeaturedArticle = () => {
               label="Featured"
               sx={{
                 position: 'absolute',
-                top: 20,
+                0: 20,
                 right: 20,
                 bgcolor: 'background.paper',
               }}

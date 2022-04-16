@@ -9,70 +9,23 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Avatar from '@mui/material/Avatar';
 import InputAdornment from '@mui/material/InputAdornment';
 
 const mock = [
   {
-    image: 'https://assets.maccarianagency.com/backgrounds/img2.jpg',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-    title: 'Lorem ipsum dolor sit amet,',
-    author: {
-      name: 'Clara Bertoletti',
-      avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
-    },
-    date: '04 Aug',
+    name: 'Jhenna Riahi',
+    avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
+    details: 'Top of the Designing field! World-renowned designer and multiple awards winner, book Jhenna for a tutoring session now.',
   },
   {
-    image: 'https://assets.maccarianagency.com/backgrounds/img3.jpg',
-    description: 'Excepteur sint occaecat cupidatat non proident',
-    title: 'Consectetur adipiscing elit',
-    author: {
-      name: 'Jhon Anderson',
-      avatar: 'https://assets.maccarianagency.com/avatars/img5.jpg',
-    },
-    date: '12 Sep',
+    name: 'Jihed Khlifa',
+    avatar: 'https://assets.maccarianagency.com/avatars/img5.jpg',
+    details: 'A 5-time Tutor of the Month Winner! One of our users most beloved tutors Jihed is here to help you out.',
   },
   {
-    image: 'https://assets.maccarianagency.com/backgrounds/img4.jpg',
-    description: 'Eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-    title: 'Labore et dolore magna aliqua',
-    author: {
-      name: 'Chary Smith',
-      avatar: 'https://assets.maccarianagency.com/avatars/img6.jpg',
-    },
-    date: '22 Nov',
-  },
-  {
-    image: 'https://assets.maccarianagency.com/backgrounds/img23.jpg',
-    description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem',
-    title: 'Eiusmod tempor incididunt',
-    author: {
-      name: 'Clara Bertoletti',
-      avatar: 'https://assets.maccarianagency.com/avatars/img1.jpg',
-    },
-  },
-  {
-    image: 'https://assets.maccarianagency.com/backgrounds/img24.jpg',
-    description: 'At vero eos et accusamus et iusto odio dignissimos ducimus',
-    title: 'Sed ut perspiciatis',
-    author: {
-      name: 'Jhon Anderson',
-      avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
-    },
-    date: '02 Aug',
-  },
-  {
-    image: 'https://assets.maccarianagency.com/backgrounds/img25.jpg',
-    description:
-      'Qui blanditiis praesentium voluptatum deleniti atque corrupti',
-    title: 'Unde omnis iste natus',
-    author: {
-      name: 'Chary Smith',
-      avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
-    },
-    date: '05 Mar',
+    name: 'Jamil Rayan',
+    avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
+    details: 'A newcomer taking out the ML community by storm! Jamil will elevate you!',
   },
 ];
 
@@ -100,7 +53,7 @@ const Result = () => {
                 variant="outlined"
                 color="primary"
                 size="medium"
-                placeholder="Search an article"
+                placeholder="Search a tutor, course or subject"
                 fullWidth
                 InputProps={{
                   startAdornment: (
@@ -177,8 +130,8 @@ const Result = () => {
                 sx={{ backgroundImage: 'none' }}
               >
                 <CardMedia
-                  image={item.image}
-                  title={item.title}
+                  image={item.avatar}
+                  title={item.name}
                   sx={{
                     height: { xs: 300, md: 360 },
                     position: 'relative',
@@ -209,11 +162,9 @@ const Result = () => {
                 </CardMedia>
                 <Box component={CardContent} position={'relative'}>
                   <Typography variant={'h6'} gutterBottom>
-                    {item.title}
+                    {item.name}
                   </Typography>
-                  <Typography color="text.secondary">
-                    {item.description}
-                  </Typography>
+                  
                 </Box>
                 <Box flexGrow={1} />
                 <Box padding={2} display={'flex'} flexDirection={'column'}>
@@ -226,17 +177,10 @@ const Result = () => {
                     alignItems={'center'}
                   >
                     <Box display={'flex'} alignItems={'center'}>
-                      <Avatar
-                        src={item.author.avatar}
-                        sx={{ marginRight: 1 }}
-                      />
-                      <Typography color={'text.secondary'}>
-                        {item.author.name}
-                      </Typography>
+                      <Typography variant={'h8'}>
+                        {item.details}
+                      </Typography> 
                     </Box>
-                    <Typography color={'text.secondary'}>
-                      {item.date}
-                    </Typography>
                   </Box>
                 </Box>
               </Box>

@@ -8,8 +8,6 @@ import {
   Hero,
   SearchBox,
   FeaturedArticle,
-  LastStories,
-  CaseStudies,
   PopularArticles,
   Newsletter,
 } from './components';
@@ -30,18 +28,12 @@ const BlogReachView = () => {
         >
           <SearchBox />
         </Container>
-        <Container>
-          <FeaturedArticle />
-        </Container>
-        <Container paddingTop={'0 !important'}>
-          <LastStories />
-        </Container>
-        <Container paddingTop={'0 !important'}>
-          <CaseStudies />
-        </Container>
         <Box paddingBottom={{ xs: 2, sm: 3, md: 4 }}>
-          <Container paddingTop={'0 !important'}>
+          <Container paddingTop={'2 !important'}>
             <PopularArticles />
+          </Container>
+          <Container>
+            <FeaturedArticle />
           </Container>
         </Box>
         <Box
