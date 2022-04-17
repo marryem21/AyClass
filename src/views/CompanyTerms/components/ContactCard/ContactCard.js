@@ -33,13 +33,13 @@ const ContactCard = () => {
           contact us.
         </Typography>
         <Typography variant={'subtitle2'}>
-          hi@maccarianagency.com
+          contactus@ayclass.com
           <br />
-          via Gola 4
+          Tunis
           <br />
-          Milan, Milano 20143
+          Taffela City
           <br />
-          Italy
+          
         </Typography>
       </Box>
     </Box>

@@ -14,7 +14,7 @@ const FooterNewsletter = () => {
           align={'center'}
           gutterBottom
         >
-          Get our stories delivered
+          Get our updates delivered
         </Typography>
         <Typography
           variant={'h6'}

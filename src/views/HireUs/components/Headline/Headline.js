@@ -14,7 +14,7 @@ const Headline = () => {
         color={'textSecondary'}
         align={'center'}
       >
-        Hire us
+        Become Tutor
       </Typography>
       <Box marginBottom={2}>
         <Typography
@@ -24,13 +24,12 @@ const Headline = () => {
             fontWeight: 700,
           }}
         >
-          Got a project for us?
+          You think you can make a great tutor?
         </Typography>
       </Box>
       <Box>
         <Typography variant="h6" align={'center'} color={'textSecondary'}>
-          We help brands and platforms turn big ideas into beautiful digital
-          products and experiences.
+         In AyClass we believe that everyone has a skill to share. Start here...
         </Typography>
       </Box>
     </Box>

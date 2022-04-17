@@ -28,7 +28,7 @@ const mock = [
   },
   {
     label: 'Email',
-    value: 'hi@maccarianagency.com',
+    value: 'hammdimaryem@gmail.com',
     icon: (
       <svg
         width={20}

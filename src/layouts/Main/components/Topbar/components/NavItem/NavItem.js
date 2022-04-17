@@ -46,7 +46,6 @@ const NavItem = ({ title, id, items, colorInvert = false }) => {
         >
           {title}
         </Typography>
-        
       </Box>
       <Popover
         elevation={3}

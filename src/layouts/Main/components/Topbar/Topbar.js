@@ -27,7 +27,6 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       justifyContent={'space-between'}
       alignItems={'center'}
       width={1}
-      
     >
       <Box
         display={'flex'}
@@ -35,19 +34,16 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         href="/"
         title="AyClass"
         width={{ xs: 200, md: 150 }}
-        sx={{zoom:'140%'}}
       >
-        <Box 
-          
+        <Box
           component={'img'}
           src={
             mode === 'light' && !colorInvert
-              ? logoLight
+              ?logoLight
               : logoDark
           }
           height={1}
           width={1}
-         
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
