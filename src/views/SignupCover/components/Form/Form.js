@@ -8,6 +8,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import * as AyClassApi from '../../../../utilities/AyClassApiClient.jsx';
 
 const validationSchema = yup.object({
   firstName: yup
@@ -41,8 +42,14 @@ const Form = () => {
     password: '',
   };
 
-  const onSubmit = (values) => {
-    return values;
+  const onSubmit = async (values) => {
+    let response = await AyClassApi.RegisterNewStudent(values);
+    if(response.ok){
+      console.log('success');
+    }
+    else{
+      console.log(response.body);
+    }
   };
 
   const formik = useFormik({
