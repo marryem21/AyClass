@@ -8,6 +8,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import { useNavigate } from 'react-router-dom';
 import * as AyClassApi from '../../../../utilities/AyClassApiClient.jsx';
 
 const validationSchema = yup.object({
@@ -34,6 +35,8 @@ const validationSchema = yup.object({
     .min(8, 'The password should have at minimum length of 8'),
 });
 
+const navigate = useNavigate();
+
 const Form = () => {
   const initialValues = {
     firstName: '',
@@ -45,7 +48,7 @@ const Form = () => {
   const onSubmit = async (values) => {
     let response = await AyClassApi.RegisterNewStudent(values);
     if(response.ok){
-      console.log('success');
+      navigate('/');
     }
     else{
       console.log(response.body);
