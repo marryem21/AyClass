@@ -8,6 +8,8 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import { useNavigate } from 'react-router-dom';
+import * as AyClassApi from '../../../../utilities/AyClassApiClient.jsx';
 
 const validationSchema = yup.object({
   firstName: yup
@@ -34,6 +36,8 @@ const validationSchema = yup.object({
 });
 
 const Form = () => {
+  const navigate = useNavigate();
+  
   const initialValues = {
     firstName: '',
     lastName: '',
@@ -41,8 +45,14 @@ const Form = () => {
     password: '',
   };
 
-  const onSubmit = (values) => {
-    return values;
+  const onSubmit = async (values) => {
+    let response = await AyClassApi.RegisterNewStudent(values);
+    if(response.ok){
+      navigate('/');
+    }
+    else{
+      console.log(response.body);
+    }
   };
 
   const formik = useFormik({

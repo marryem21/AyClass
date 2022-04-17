@@ -7,6 +7,7 @@ import Divider from '@mui/material/Divider';
 import TextField from '@mui/material/TextField';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { alpha, useTheme } from '@mui/material/styles';
+
 import Container from 'components/Container';
 
 const Hero = () => {
@@ -30,10 +31,7 @@ const Hero = () => {
             )} 0%)`,
           }}
         >
-          Learn your way...
-        </Typography>
-        <Typography variant="h3" color="text.primary" sx={{ fontWeight: 700 }}>
-          gain more experience
+          Learn your way.
         </Typography>
       </Box>
       <Box marginBottom={3}>
@@ -96,7 +94,7 @@ const Hero = () => {
         >
           Trusted by industry leading companies
         </Typography>
-        {/* <Box display="flex" flexWrap="wrap" justifyContent={'flex-start'}>
+        <Box display="flex" flexWrap="wrap" justifyContent={'flex-start'}>
           {[
             'https://assets.maccarianagency.com/svg/logos/airbnb-original.svg',
             'https://assets.maccarianagency.com/svg/logos/amazon-original.svg',
@@ -121,7 +119,7 @@ const Hero = () => {
               />
             </Box>
           ))}
-        </Box> */}
+        </Box>
       </Box>
     </Box>
   );
