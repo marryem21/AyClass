@@ -11,53 +11,81 @@ import Button from '@mui/material/Button';
 import StarIcon from '@mui/icons-material/Star';
 import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
 
-
 const mock = [
   {
-    image: 'https://images.unsplash.com/photo-1529470839332-78ad660a6a82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
-    description:
-     'dcjahjvfn',
-    title: <div><StarIcon/> <StarIcon/> <StarIcon/><StarIcon/> <StarBorderOutlinedIcon/></div>,
+    image:
+      'https://images.unsplash.com/photo-1529470839332-78ad660a6a82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+    description: 'dcjahjvfn',
+    title: (
+      <div>
+        <StarIcon /> <StarIcon /> <StarIcon />
+        <StarIcon /> <StarBorderOutlinedIcon />
+      </div>
+    ),
     author: {
       name: 'Maryem Hamdi',
     },
     date: '04 Aug',
   },
   {
-    image: 'https://images.unsplash.com/photo-1522010265321-fd346cc64d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+    image:
+      'https://images.unsplash.com/photo-1522010265321-fd346cc64d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    title: <div><StarIcon/> <StarIcon/> <StarIcon/><StarIcon/> <StarIcon/></div>,
+    title: (
+      <div>
+        <StarIcon /> <StarIcon /> <StarIcon />
+        <StarIcon /> <StarIcon />
+      </div>
+    ),
     author: {
       name: 'Hadil abdelaoui',
     },
     date: '12 Sep',
   },
   {
-    image: 'https://images.unsplash.com/photo-1530878131793-cc5cbcba9a47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80',
+    image:
+      'https://images.unsplash.com/photo-1530878131793-cc5cbcba9a47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=689&q=80',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    title: <div><StarIcon/> <StarIcon/> <StarIcon/><StarIcon/> <StarIcon/></div>,
+    title: (
+      <div>
+        <StarIcon /> <StarIcon /> <StarIcon />
+        <StarIcon /> <StarIcon />
+      </div>
+    ),
     author: {
       name: 'Nouhaila Tahri',
     },
     date: '04 Aug',
   },
   {
-    image: 'https://images.unsplash.com/photo-1545696968-1a5245650b36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1132&q=80',
+    image:
+      'https://images.unsplash.com/photo-1545696968-1a5245650b36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1132&q=80',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    title: <div><StarIcon/> <StarIcon/> <StarIcon/><StarIcon/> <StarIcon/></div>,
+    title: (
+      <div>
+        <StarIcon /> <StarIcon /> <StarIcon />
+        <StarIcon /> <StarIcon />
+      </div>
+    ),
     author: {
       name: 'Talel romdhan',
     },
     date: '12 Sep',
   },
   {
-    image: 'https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
+    image:
+      'https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    title: <div><StarIcon/> <StarIcon/> <StarIcon/><StarIcon/> <StarIcon/></div>,
+    title: (
+      <div>
+        <StarIcon /> <StarIcon /> <StarIcon />
+        <StarIcon /> <StarIcon />
+      </div>
+    ),
     author: {
       name: 'hanin ben youssef',
     },
@@ -132,7 +160,9 @@ const SidebarArticles = () => {
                     {item.author.name} - {item.date}
                   </Typography>
                 </Box>
-                <Button color={'warning'} size={'small'}>Read More</Button>
+                <Button color={'warning'} size={'small'}>
+                  Read More
+                </Button>
               </CardContent>
             </Box>
           </Grid>

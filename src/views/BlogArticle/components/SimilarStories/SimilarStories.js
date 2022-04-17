@@ -12,8 +12,6 @@ import Avatar from '@mui/material/Avatar';
 import StarIcon from '@mui/icons-material/Star';
 import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
 
-
-
 const mock = [
   {
     image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
@@ -58,7 +56,6 @@ const SimilarStories = () => {
         alignItems={{ xs: 'flex-start', sm: 'center' }}
         flexDirection={{ xs: 'column', sm: 'row' }}
         marginBottom={4}
-
       >
         <Box>
           <Typography fontWeight={700} variant={'h6'} gutterBottom>

@@ -8,7 +8,6 @@ import logoDark from '../../../../images/logo.png';
 import Link from '@mui/material/Link';
 import Divider from '@mui/material/Divider';
 
-
 const Footer = () => {
   const theme = useTheme();
   const { mode } = theme.palette;
@@ -63,7 +62,6 @@ const Footer = () => {
                 Documentation
               </Link>
             </Box>
-            
           </Box>
         </Box>
       </Grid>
@@ -78,7 +76,6 @@ const Footer = () => {
           &copy; AyClass. 2022, All rights reserved
         </Typography>
         <Divider />
-        
         <Typography
           align={'center'}
           variant={'caption'}

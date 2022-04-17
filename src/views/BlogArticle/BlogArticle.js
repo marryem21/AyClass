@@ -24,11 +24,9 @@ const BlogArticle = () => {
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
-
   return (
     <Main colorInvert={false}>
       <Box>
-        
         <Container>
           <Container display={'flex'} position={'relative'} zIndex={2}>
             <Avatar
@@ -49,12 +47,12 @@ const BlogArticle = () => {
                 Samir Hamdi
               </Typography>
               <Box>
-{               <Typography
+                <Typography
                   variant={'h7'}
                   color={'secondary'}
                 >
                   ISSAT Sousse 
-                </Typography>}
+                </Typography>
               </Box>
               <Box>
                 <Typography
@@ -65,9 +63,7 @@ const BlogArticle = () => {
                 </Typography>
               </Box>
             </Box>     
-            
-            {isTutor && (<Box marginLeft={'600px'}>    
-            
+            {isTutor && (<Box marginLeft={'600px'}> 
               <StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarIcon/>
               <Box display={'flex'}>
                 <Typography
@@ -88,16 +84,14 @@ const BlogArticle = () => {
                     /Hour
                 </Typography>
               </Box>
-              <Button  
-                
+              <Button                  
                 size={'large'} 
                 variant={'contained'} 
                 type={'submit'}
                 sx={{marginTop:3}}  
               >
                     Book Now
-              </Button>
-              
+              </Button>              
             </Box>)}
           </Container>
           <Grid container spacing={4}>

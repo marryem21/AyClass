@@ -94,12 +94,10 @@ const Content = () => {
           </Typography>
         </Box>
       </Box>
-      {/* test strarts here*/}
       <Box  paddingX={{ xs: 0, sm: 4, md: 20 }} paddingBottom={4}
       >
         <Hub />
       </Box>
-      {/* test strarts here */}
       <Box paddingX={{ xs: 0, sm: 4, md: 6 }} paddingBottom={4}>
         <Box>
           <Typography>
