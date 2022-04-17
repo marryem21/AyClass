@@ -6,7 +6,7 @@ export const light = {
 
   primary: {
     main: '#30306C', //buttons and buttons text
-    light: '#20AB20',
+    light: '#FFB700',
     dark: '#595989', //button hover
     contrastText: '#F2F2F2',//text on buttons
   },
@@ -41,8 +41,8 @@ export const dark = {
   },
   mode: 'dark',
   primary: {
-    main: '#30306C', //buttons and buttons text
-    light: '#20AB20',//still did not detect it
+    main: '#202049', //buttons and buttons text
+    light: '#FFB700',//still did not detect it
     dark: '#202049', //button hover
     contrastText: '#F2F2F2',//text on buttons
   },

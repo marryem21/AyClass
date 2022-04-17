@@ -6,6 +6,8 @@ import { useTheme } from '@mui/material/styles';
 import logoLight from '../../../../images/logomove.png';
 import logoDark from '../../../../images/logo.png';
 import Link from '@mui/material/Link';
+import Divider from '@mui/material/Divider';
+
 
 const Footer = () => {
   const theme = useTheme();
@@ -67,7 +69,8 @@ const Footer = () => {
         >
           &copy; AyClass. 2021 All rights reserved
         </Typography>
-        <div style={{ borderTop: '0.5px solid #fff',borderColor:'grey' , margin:'10px' }}></div>
+        <Divider />
+        
         <Typography
           align={'center'}
           variant={'caption'}

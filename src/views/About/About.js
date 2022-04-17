@@ -20,7 +20,7 @@ const About = () => {
     <Main colorInvert={true}>
       <Hero />
       <Container>
-        <Story />
+        <Story/>
       </Container>
       <Container paddingTop={'0 !important'}>
         <WhoWeAre />

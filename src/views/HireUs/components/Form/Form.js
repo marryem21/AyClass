@@ -10,55 +10,51 @@ import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 
 const validationSchema = yup.object({
-  firstName: yup
+  university: yup
+    .string()
+    .required('Your university is required'),
+  institution: yup
+    .string()
+    .required('Your institution is required'),
+  major: yup
+    .string()
+    .required('Your major is required.'),
+  degree: yup
+    .string()
+    .required('Your degree is required.'),
+  level: yup
+    .string()
+    .required('Your level is required.'),
+  
+  subject: yup
+    .string()
+    .required('Your subject is required.'),
+  competences: yup
     .string()
     .trim()
-    .min(2, 'Please enter a valid name')
-    .max(50, 'Please enter a valid name')
-    .required('Please specify your first name'),
-  lastName: yup
-    .string()
-    .trim()
-    .min(2, 'Please enter a valid name')
-    .max(50, 'Please enter a valid name')
-    .required('Please specify your last name'),
-  email: yup
-    .string()
-    .trim()
-    .email('Please enter a valid email address')
-    .required('Email is required.'),
-  phone: yup
-    .string()
-    .trim()
-    .matches(
-      /^(\+?\d{0,4})?\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{3}\)?)\s?-?\s?(\(?\d{4}\)?)$/,
-      'Please enter a valid phone number.',
-    ),
-  budget: yup.string().required('Please specify your project budget'),
-  message: yup
-    .string()
-    .trim()
-    .max(500, 'The message cannot contain more than 500 characters'),
+    .max(1000, 'The message cannot contain more than 500 characters'),
 });
 
 const Form = () => {
   const initialValues = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    budget: '',
-    message: '',
+
+    university: '',
+    institution: '',
+    major: '',
+    degree: '',
+    level: '',
+    subject: '',
+    competences: '',
   };
 
-  const onSubmit = (values) => {
-    return values;
-  };
+  // const onSubmit = (values) => {
+  //   return values;
+  // };
 
   const formik = useFormik({
     initialValues,
     validationSchema: validationSchema,
-    onSubmit,
+    // onSubmit,
   });
 
   return (
@@ -70,88 +66,28 @@ const Form = () => {
           container
           spacing={4}
         >
-          <Grid item xs={12} sm={6}>
-            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please tell us your name *
-            </Typography>
-            <TextField
-              label="First name"
-              variant="outlined"
-              name={'firstName'}
-              fullWidth
-              value={formik.values.firstName}
-              onChange={formik.handleChange}
-              error={
-                formik.touched.firstName && Boolean(formik.errors.firstName)
-              }
-              helperText={formik.touched.firstName && formik.errors.firstName}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please tell us your name *
-            </Typography>
-            <TextField
-              label="Last name"
-              variant="outlined"
-              name={'lastName'}
-              fullWidth
-              value={formik.values.lastName}
-              onChange={formik.handleChange}
-              error={formik.touched.lastName && Boolean(formik.errors.lastName)}
-              helperText={formik.touched.lastName && formik.errors.lastName}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please enter your email address *
-            </Typography>
-            <TextField
-              label="Email"
-              variant="outlined"
-              name={'email'}
-              fullWidth
-              value={formik.values.email}
-              onChange={formik.handleChange}
-              error={formik.touched.email && Boolean(formik.errors.email)}
-              helperText={formik.touched.email && formik.errors.email}
-            />
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please enter your phone number (optional)
-            </Typography>
-            <TextField
-              label="Phone number"
-              variant="outlined"
-              name={'phone'}
-              fullWidth
-              value={formik.values.phone}
-              onChange={formik.handleChange}
-              error={formik.touched.phone && Boolean(formik.errors.phone)}
-              helperText={formik.touched.phone && formik.errors.phone}
-            />
-          </Grid>
           <Grid item xs={12}>
             <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please tell us the budget
+            Please specify the university related to the subject you are willing to teach
             </Typography>
             <TextField
               select
-              label="Project budget"
+              label="University"
               variant="outlined"
-              name={'budget'}
+              name={'University'}
               fullWidth
-              value={formik.values.budget}
+              value={formik.values.University}
               onChange={formik.handleChange}
-              error={formik.touched.budget && Boolean(formik.errors.budget)}
-              helperText={formik.touched.budget && formik.errors.budget}
+              error={formik.touched.University && Boolean(formik.errors.University)}
+              helperText={formik.touched.University && formik.errors.University}
             >
               {[
-                '< $20.000',
-                '$20.000 - $50.000',
-                '$50.000 - $100.000',
-                '> $100.000',
+                'University of Sousse',
+                'University of Manar',
+                'University of Tunis',
+                'University of Monastir',
+                'University of Gabes',
+                'University of Sfax',
               ].map((option) => (
                 <MenuItem key={option} value={option}>
                   {option}
@@ -161,19 +97,168 @@ const Form = () => {
           </Grid>
           <Grid item xs={12}>
             <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Please tell us about your project (optional)
+              Please choose your institution
             </Typography>
             <TextField
-              label="Message"
+              select
+              label="institution"
               variant="outlined"
-              name={'message'}
+              name={'institution'}
+              fullWidth
+              value={formik.values.institution}
+              onChange={formik.handleChange}
+              error={formik.touched.institution && Boolean(formik.errors.institution)}
+              helperText={formik.touched.institution && formik.errors.institution}
+            >
+              {[
+                'ISSAT Sousse',
+                'ISET Sousse',
+                'FSEG Sousse',
+                'Fac de droits',
+                'IHEC',
+                'ESSTHs',
+              ].map((option) => (
+                <MenuItem key={option} value={option}>
+                  {option}
+                </MenuItem>
+              ))}
+            </TextField>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+              Please choose your Major
+            </Typography>
+            <TextField
+              select
+              label="Major"
+              variant="outlined"
+              name={'Major'}
+              fullWidth
+              value={formik.values.Major}
+              onChange={formik.handleChange}
+              error={formik.touched.Major && Boolean(formik.errors.Major)}
+              helperText={formik.touched.Major && formik.errors.Major}
+            >
+              {[
+                'Computer science',
+                'MPI',
+                'EEA',
+                'Meactronics',
+                'Mecanics',
+                'Genie civile',
+              ].map((option) => (
+                <MenuItem key={option} value={option}>
+                  {option}
+                </MenuItem>
+              ))}
+            </TextField>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+              Please choose your degree
+            </Typography>
+            <TextField
+              select
+              label="Degree"
+              variant="outlined"
+              name={'degree'}
+              fullWidth
+              value={formik.values.degree}
+              onChange={formik.handleChange}
+              error={formik.touched.degree && Boolean(formik.errors.degree)}
+              helperText={formik.touched.degree && formik.errors.degree}
+            >
+              {[
+                'Engineering',
+                'Prepa',
+                'Masters',
+                'PHD',
+                'License',
+              ].map((option) => (
+                <MenuItem key={option} value={option}>
+                  {option}
+                </MenuItem>
+              ))}
+            </TextField>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+              Please choose your Level
+            </Typography>
+            <TextField
+              select
+              label="Level"
+              variant="outlined"
+              name={'Level'}
+              fullWidth
+              value={formik.values.Level}
+              onChange={formik.handleChange}
+              error={formik.touched.Level && Boolean(formik.errors.Level)}
+              helperText={formik.touched.Level && formik.errors.Level}
+            >
+              {[
+                '1st',
+                '2nd',
+                '3rd',
+                '4th',
+                '5th',
+              ].map((option) => (
+                <MenuItem key={option} value={option}>
+                  {option}
+                </MenuItem>
+              ))}
+            </TextField>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+              Please choose a subject you are willing to teach
+            </Typography>
+            <TextField
+              select
+              label="Subject"
+              variant="outlined"
+              name={'subject'}
+              fullWidth
+              value={formik.values.subject}
+              onChange={formik.handleChange}
+              error={formik.touched.subject && Boolean(formik.errors.subject)}
+              helperText={formik.touched.subject && formik.errors.subject}
+            >
+              {[
+                'Math ingenieur',
+                'Electrostatique',
+                'Electrocinetique',
+                'Electromagnetique',
+                'C',
+                'C++',
+                'JAVA',
+                'Conception',
+                'SQL',
+                'IHM'
+              ].map((option) => (
+                <MenuItem key={option} value={option}>
+                  {option}
+                </MenuItem>
+              ))}
+            </TextField>
+          </Grid>
+          
+          <Grid item xs={12}>
+            <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+              Tell us about your competences 
+            </Typography>
+            <TextField
+              label="Enter your competences"
+              variant="outlined"
+              name={'competences'}
               fullWidth
               multiline
               rows={4}
-              value={formik.values.message}
+              value={formik.values.competences}
               onChange={formik.handleChange}
-              error={formik.touched.message && Boolean(formik.errors.message)}
-              helperText={formik.touched.message && formik.errors.message}
+              error={formik.touched.competences && Boolean(formik.errors.competences)}
+              helperText={formik.touched.competences && formik.errors.competences}
             />
           </Grid>
           <Grid
@@ -185,7 +270,7 @@ const Form = () => {
             flexDirection={'column'}
           >
             <Button size={'large'} variant={'contained'} type={'submit'}>
-              Send request
+              Submit
             </Button>
             <Typography
               variant={'subtitle2'}
@@ -193,7 +278,7 @@ const Form = () => {
               sx={{ marginTop: 2 }}
               align={'center'}
             >
-              We'll get back to you in 1-2 business days.
+              Enjoy your tutor journey
             </Typography>
           </Grid>
         </Box>

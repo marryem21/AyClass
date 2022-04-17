@@ -27,49 +27,45 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       justifyContent={'space-between'}
       alignItems={'center'}
       width={1}
-      
     >
       <Box
         display={'flex'}
         component="a"
         href="/"
-        title="theFront"
-        width={{ xs: 100, md: 120 }}
-        sx={{zoom:'140%'}}
+        title="AyClass"
+        width={{ xs: 200, md: 150 }}
       >
-        <Box 
-          
+        <Box
           component={'img'}
           src={
             mode === 'light' && !colorInvert
-              ? logoLight
+              ?logoLight
               : logoDark
           }
           height={1}
           width={1}
-         
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <NavItem
-            title={'Landings'}
-            id={'landing-pages'}
+            title={'Become Tutor'}
+            id={'become-tutor'}
             items={landingPages}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Company'}
-            id={'company-pages'}
+            title={'Subjects'}
+            id={'subjects'}
             items={companyPages}
             colorInvert={colorInvert}
           />
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Account'}
+            title={'About Us'}
             id={'account-pages'}
             items={accountPages}
             colorInvert={colorInvert}
@@ -77,7 +73,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Pages'}
+            title={'Sign Up'}
             id={'secondary-pages'}
             items={secondaryPages}
             colorInvert={colorInvert}
@@ -85,7 +81,7 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Blog'}
+            title={'Sign In'}
             id={'blog-pages'}
             items={blogPages}
             colorInvert={colorInvert}
@@ -93,15 +89,13 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         </Box>
         <Box marginLeft={4}>
           <NavItem
-            title={'Portfolio'}
+            title={'Contact Us'}
             id={'portfolio-pages'}
             items={portfolioPages}
             colorInvert={colorInvert}
           />
         </Box>
-        <Box marginLeft={4}>
-     
-        </Box>
+        
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>
         <Button

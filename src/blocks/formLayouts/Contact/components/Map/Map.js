@@ -55,7 +55,7 @@ const Map = () => {
           >
             Call us:
           </Typography>
-          <Typography variant={'subtitle1'}>+39 34 111 222</Typography>
+          <Typography variant={'subtitle1'}>+21655889972</Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography
@@ -65,7 +65,7 @@ const Map = () => {
           >
             Email us:
           </Typography>
-          <Typography variant={'subtitle1'}>hi@maccarianagency.com</Typography>
+          <Typography variant={'subtitle1'}>hammdimaryem@gmail.com</Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography
@@ -76,7 +76,7 @@ const Map = () => {
             Address:
           </Typography>
           <Typography variant={'subtitle1'}>
-            Via E. Gola 4, Milan MI, Italy
+            Taffela city
           </Typography>
         </Grid>
       </Grid>

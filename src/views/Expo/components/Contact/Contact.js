@@ -75,7 +75,7 @@ const Contact = () => {
             >
               Call us:
             </Typography>
-            <Typography variant={'subtitle1'}>+39 34 111 222</Typography>
+            <Typography variant={'subtitle1'}>+21655889972</Typography>
           </Grid>
           <Grid item xs={12} sm={6}>
             <Typography
@@ -86,7 +86,7 @@ const Contact = () => {
               Email us:
             </Typography>
             <Typography variant={'subtitle1'}>
-              hi@maccarianagency.com
+            contactus@ayclass.com
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -98,7 +98,7 @@ const Contact = () => {
               Address:
             </Typography>
             <Typography variant={'subtitle1'}>
-              Via E. Gola 4, Milan MI, Italy
+              Taffela City
             </Typography>
           </Grid>
         </Grid>

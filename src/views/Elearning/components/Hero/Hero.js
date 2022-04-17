@@ -31,7 +31,7 @@ const Hero = () => {
             )} 0%)`,
           }}
         >
-          Learn new skills,
+          Learn your way...
         </Typography>
         <Typography variant="h3" color="text.primary" sx={{ fontWeight: 700 }}>
           gain more experience
@@ -96,7 +96,7 @@ const Hero = () => {
         >
           Trusted by industry leading companies
         </Typography>
-        <Box display="flex" flexWrap="wrap" justifyContent={'flex-start'}>
+        {/* <Box display="flex" flexWrap="wrap" justifyContent={'flex-start'}>
           {[
             'https://assets.maccarianagency.com/svg/logos/airbnb-original.svg',
             'https://assets.maccarianagency.com/svg/logos/amazon-original.svg',
@@ -121,7 +121,7 @@ const Hero = () => {
               />
             </Box>
           ))}
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );
