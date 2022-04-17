@@ -35,9 +35,9 @@ const validationSchema = yup.object({
     .min(8, 'The password should have at minimum length of 8'),
 });
 
-const navigate = useNavigate();
-
 const Form = () => {
+  const navigate = useNavigate();
+  
   const initialValues = {
     firstName: '',
     lastName: '',
