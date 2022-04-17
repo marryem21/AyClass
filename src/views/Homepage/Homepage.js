@@ -14,7 +14,7 @@ import {
   Subscription,
 } from './components';
 
-const Elearning = () => {
+const Homepage = () => {
   const theme = useTheme();
 
   return (
@@ -75,4 +75,4 @@ const Elearning = () => {
   );
 };
 
-export default Elearning;
+export default Homepage;

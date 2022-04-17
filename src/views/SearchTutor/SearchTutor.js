@@ -6,7 +6,7 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Breadcrumb, Result } from './components';
 
-const BlogSearch = () => {
+const SearchTutor = () => {
   const theme = useTheme();
   return (
     <Main>
@@ -52,4 +52,4 @@ const BlogSearch = () => {
   );
 };
 
-export default BlogSearch;
+export default SearchTutor;

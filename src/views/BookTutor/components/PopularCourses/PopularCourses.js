@@ -9,42 +9,63 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Avatar from '@mui/material/Avatar';
+import Pagination from '@mui/material/Pagination';
 
 const mock = [
   {
-    image: 'https://assets.maccarianagency.com/backgrounds/img23.jpg',
-    description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem',
-    title: 'Eiusmod tempor incididunt',
+    image: 'https://media.istockphoto.com/photos/web-design-desktop-picture-id1305999733?b=1&k=20&m=1305999733&s=170667a&w=0&h=3DeafNR4TJ7eSqHvBFkVRwNbnBrZxpj6RlaqbeiIAfs=',
+    description: 'Learn how to design your portals to look trendy and modern!',
+    title: 'Web Design Basics',
     author: {
-      name: 'Clara Bertoletti',
+      name: 'Jhenna Riahi',
+      avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
+    },
+    date: '04 Jan',
+  },
+  {
+    image: 'https://www.pngitem.com/pimgs/m/346-3460443_machine-learning-course-near-me-machine-learning-logo.png',
+    description: 'Start your ML journey with renowned expert Ahmed Laarbi.',
+    title: 'Fundemantals of Machine Learning',
+    author: {
+      name: 'Ahmed Laarbi',
+      avatar: 'https://assets.maccarianagency.com/avatars/img5.jpg',
+    },
+    date: '12 March',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzaWduJTIwdGhpbmtpbmd8ZW58MHx8MHx8&w=1000&q=80',
+    description:
+      'Change up your strategy & how you tackle projects.',
+    title: 'Design thinking',
+    author: {
+      name: 'Lina Moumni',
       avatar: 'https://assets.maccarianagency.com/avatars/img1.jpg',
     },
   },
   {
-    image: 'https://assets.maccarianagency.com/backgrounds/img24.jpg',
-    description: 'At vero eos et accusamus et iusto odio dignissimos ducimus',
-    title: 'Sed ut perspiciatis',
+    image: 'https://media.istockphoto.com/photos/online-education-concept-picture-id636332456?k=20&m=636332456&s=612x612&w=0&h=ckwh8_U-ET3QSyJUAaceejX6WGdljVy-E87PWO-Sok8=',
+    description: 'We start from scratch as we go deeper into the world of Algebra with the one and only Rami Amar',
+    title: 'Your guide to Algebra I',
     author: {
-      name: 'Jhon Anderson',
+      name: 'Rami Amar',
       avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
     },
-    date: '02 Aug',
+    date: '02 Feb',
   },
   {
-    image: 'https://assets.maccarianagency.com/backgrounds/img25.jpg',
+    image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHVibGljJTIwc3BlYWtpbmd8ZW58MHx8MHx8&w=1000&q=80',
     description:
-      'Qui blanditiis praesentium voluptatum deleniti atque corrupti',
-    title: 'Unde omnis iste natus',
+      'Want to learn how to present yourself in public? This is the course for you!',
+    title: 'The ABCs of Public Speaking',
     author: {
-      name: 'Chary Smith',
+      name: 'Jihene Mouad',
       avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
     },
     date: '05 Mar',
   },
 ];
 
-const LastStories = () => {
+const PopularCourses = () => {
   const theme = useTheme();
   return (
     <Box>
@@ -57,10 +78,10 @@ const LastStories = () => {
       >
         <Box>
           <Typography fontWeight={700} variant={'h6'} gutterBottom>
-            Latest stories
+            Popular courses
           </Typography>
           <Typography color={'text.secondary'}>
-            Here’s what we’ve been up to recently.
+            Here are the hottest courses on AyClass recently!
           </Typography>
         </Box>
         <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
@@ -77,7 +98,7 @@ const LastStories = () => {
       </Box>
       <Grid container spacing={4}>
         {mock.map((item, i) => (
-          <Grid item xs={12} sm={6} md={4} key={i}>
+          <Grid item xs={12} sm={i === 0 ? 12 : 6} md={i < 2 ? 6 : 4} key={i}>
             <Box
               component={'a'}
               href={''}
@@ -168,9 +189,12 @@ const LastStories = () => {
             </Box>
           </Grid>
         ))}
+        <Grid item container justifyContent={'center'} xs={12}>
+          <Pagination count={10} size={'large'} color="primary" />
+        </Grid>
       </Grid>
     </Box>
   );
 };
 
-export default LastStories;
+export default PopularCourses;

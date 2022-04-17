@@ -22,7 +22,7 @@ const mock = {
   date: '10 April',
 };
 
-const FeaturedArticle = () => {
+const FeaturedTutor = () => {
   const theme = useTheme();
   return (
     <Box>
@@ -146,4 +146,4 @@ const FeaturedArticle = () => {
   );
 };
 
-export default FeaturedArticle;
+export default FeaturedTutor;

@@ -1,18 +1,17 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
-
 import Main from 'layouts/Main';
 import Container from 'components/Container';
 import {
   Hero,
   SearchBox,
-  FeaturedArticle,
-  PopularArticles,
+  FeaturedTutor,
+  PopularCourses,
   Newsletter,
 } from './components';
 
-const BlogReachView = () => {
+const BookTutor = () => {
   const theme = useTheme();
   return (
     <Main colorInvert={true}>
@@ -30,10 +29,10 @@ const BlogReachView = () => {
         </Container>
         <Box paddingBottom={{ xs: 2, sm: 3, md: 4 }}>
           <Container paddingTop={'2 !important'}>
-            <PopularArticles />
+            <PopularCourses />
           </Container>
           <Container>
-            <FeaturedArticle />
+            <FeaturedTutor />
           </Container>
         </Box>
         <Box
@@ -66,4 +65,4 @@ const BlogReachView = () => {
   );
 };
 
-export default BlogReachView;
+export default BookTutor;

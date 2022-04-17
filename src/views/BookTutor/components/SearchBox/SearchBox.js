@@ -71,7 +71,7 @@ const SearchBox = () => {
                 variant="contained"
                 color="primary"
                 size="medium"
-                href={'/blog-search'}
+                href={'/search-tutor'}
                 fullWidth
               >
                 Search
