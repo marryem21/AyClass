@@ -39,14 +39,15 @@ const Hero = () => {
       </Box>
       <Box marginBottom={3}>
         <Typography variant="h6" component="p" color="text.secondary">
-          Our mission is to spread education that is easy accessible and
-          everyone can learn.
+          We vowed to make education easier and more accessible
+          to everyone, everywhere by providing affordable
+          and personalized tutoring service.  
         </Typography>
       </Box>
       <Box display="flex" flexDirection={'column'} justifyContent={'center'}>
         <Box marginBottom={2}>
           <Typography variant="body1" component="p">
-            Join over 5000 subscribers for our newsletter
+            Look for the perfect tutor for you
           </Typography>
         </Box>
         <Box
@@ -67,7 +68,7 @@ const Hero = () => {
             <Box
               flex={'1 1 auto'}
               component={TextField}
-              label="Enter your email"
+              label="Enter a subject, a course, or a tutor's name"
               variant="outlined"
               color="primary"
               fullWidth
@@ -82,7 +83,7 @@ const Hero = () => {
               marginTop={{ xs: 2, sm: 0 }}
               marginLeft={{ sm: 2 }}
             >
-              Subscribe
+              Search
             </Box>
           </Box>
         </Box>
@@ -143,7 +144,7 @@ const Hero = () => {
         <Box
           component={LazyLoadImage}
           effect="blur"
-          src={'https://assets.maccarianagency.com/backgrounds/img2.jpg'}
+          src={'./img/home-hero.jpg'}
           height={{ xs: 'auto', md: 1 }}
           maxHeight={{ xs: 300, md: 1 }}
           width={1}

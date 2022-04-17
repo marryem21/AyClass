@@ -8,7 +8,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import * as AyClassApi from '../../../../utilities/AyClassApiClient';
+import * as AyClassApi from '../../../../utilities/AyClassApiClient.jsx';
 
 const validationSchema = yup.object({
   firstName: yup

@@ -15,23 +15,23 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 const mock = [
   {
     feedback:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    name: 'Fatma hamda',
-    title: 'MUI lover',
+      'AyClass is bringing us a new prespective of Education that we have not seen before. Adaptable, accessible, and the student always comes first.',
+    name: 'Imene the Expert',
+    title: 'Education expert',
     avatar: 'https://assets.maccarianagency.com/avatars/img1.jpg',
   },
   {
     feedback:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    name: 'Seyf Yaagoub',
-    title: 'Senior Frontend Developer',
+      'Mr. Hamed is one of my favorite tutors. I have always struggled with revision, but thanks to his strategy and his methods I keep getting better.',
+    name: 'Ahmed the Student',
+    title: 'Student',
     avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
   },
   {
     feedback:
-      'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    name: 'Hadi abdelaoui',
-    title: 'SEO at Comoti',
+      'My experience with Ayclass is unique and extraordinary. I hope everyone would give it a go.',
+    name: 'Rayan the Entrepreneur',
+    title: 'Self-taught entrepreneur',
     avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
   },
 ];
@@ -67,7 +67,7 @@ const Reviews = () => {
             marginTop: theme.spacing(1),
           }}
         >
-          Rated 5 out of 5 stars by our customers!
+          Rated 5 out of 5 stars by our users!
         </Typography>
         <Typography
           variant="h6"
@@ -75,8 +75,8 @@ const Reviews = () => {
           color={'text.secondary'}
           data-aos={'fade-up'}
         >
-          Companies from across the globe have had fantastic experiences using
-          theFront.
+          Students from across the globe have had fantastic experiences using
+          AyClass.
           <br />
           Here’s what they have to say.
         </Typography>
@@ -121,7 +121,7 @@ const Reviews = () => {
               component={Card}
               display={'flex'}
               flexDirection={'column'}
-              alignItems={'center'}
+              alignItems={'left'}
               boxShadow={0}
               variant={'outlined'}
               borderRadius={2}
@@ -130,7 +130,7 @@ const Reviews = () => {
                 sx={{
                   display: 'flex',
                   flexDirection: 'column',
-                  alignItems: 'center',
+                  alignItems: 'left',
                 }}
               >
                 <Box marginBottom={1}>
@@ -163,7 +163,7 @@ const Reviews = () => {
                     </Box>
                   </Box>
                 </Box>
-                <Typography align={'center'} color="text.secondary">
+                <Typography align={'left'} color="text.secondary">
                   {item.feedback}
                 </Typography>
               </CardContent>

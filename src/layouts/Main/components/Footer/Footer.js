@@ -40,23 +40,31 @@ const Footer = () => {
               width={1}
             />
           </Box>
-          <Link
-            variant={'body2'}
-            underline="none"
-            component="a"
-            href="#"
-            color="text.primary"
-          >
-            <Typography
-              align={'center'}
-              variant={'subtitle8'}
-              color="text.secondary"
-              gutterBottom
-              fontWeight={'light'}  
-            >  
-              About Us | Contact Us
-            </Typography>
-          </Link>
+          <Box display="flex" flexWrap={'wrap'} alignItems={'center'}>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                Home
+              </Link>
+            </Box>
+            <Box marginTop={1} marginRight={2}>
+              <Link
+                underline="none"
+                component="a"
+                href="/docs/introduction"
+                color="text.primary"
+                variant={'subtitle2'}
+              >
+                Documentation
+              </Link>
+            </Box>
+            
+          </Box>
         </Box>
       </Grid>
       <Grid item xs={12}>
@@ -67,7 +75,7 @@ const Footer = () => {
           gutterBottom
           fontWeight={'light'}  
         >
-          &copy; AyClass. 2021 All rights reserved
+          &copy; AyClass. 2022, All rights reserved
         </Typography>
         <Divider />
         

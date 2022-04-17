@@ -95,7 +95,6 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
             colorInvert={colorInvert}
           />
         </Box>
-        
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>
         <Button

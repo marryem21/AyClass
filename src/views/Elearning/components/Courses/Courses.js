@@ -15,10 +15,10 @@ import { colors } from '@mui/material';
 
 const mock = [
   {
-    price: 'dt59 / month',
+    price: '59TND / month',
     media: 'https://assets.maccarianagency.com/backgrounds/img5.jpg',
     title: 'UX & web design',
-    tutor: 'Samir hamadi',
+    tutor: 'Melek Haded',
     users: [
       'https://assets.maccarianagency.com/avatars/img1.jpg',
       'https://assets.maccarianagency.com/avatars/img2.jpg',
@@ -28,10 +28,10 @@ const mock = [
     ],
   },
   {
-    price: 'dt69 / month',
+    price: '69TND / month',
     media: 'https://assets.maccarianagency.com/backgrounds/img6.jpg',
     title: 'Software engineering',
-    tutor: 'Samia benin',
+    tutor: 'Aymen Trad',
     users: [
       'https://assets.maccarianagency.com/avatars/img1.jpg',
       'https://assets.maccarianagency.com/avatars/img2.jpg',
@@ -41,10 +41,10 @@ const mock = [
     ],
   },
   {
-    price: 'dt49 / month',
+    price: '49TND / month',
     media: 'https://assets.maccarianagency.com/backgrounds/img7.jpg',
     title: 'Graphic design for beginners',
-    tutor: 'Nouhaila Tahri',
+    tutor: 'Ines Hilmi',
     users: [
       'https://assets.maccarianagency.com/avatars/img1.jpg',
       'https://assets.maccarianagency.com/avatars/img2.jpg',
@@ -54,10 +54,10 @@ const mock = [
     ],
   },
   {
-    price: 'dt59 / month',
+    price: '59TND / month',
     media: 'https://assets.maccarianagency.com/backgrounds/img9.jpg',
     title: 'Marketing VS Sales',
-    tutor: 'Hadil abdelaoui',
+    tutor: 'Jamel Karem',
     users: [
       'https://assets.maccarianagency.com/avatars/img1.jpg',
       'https://assets.maccarianagency.com/avatars/img2.jpg',

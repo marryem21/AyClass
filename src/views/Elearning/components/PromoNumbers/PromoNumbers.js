@@ -13,7 +13,7 @@ const mock = [
   {
     number: '1000+',
     title: 'Online courses',
-    subtitle: 'Choose from over 1000+ online video courses.',
+    subtitle: 'Choose from over 1000+ online tutors & courses.',
     icon: (
       <svg
         height={24}
@@ -173,6 +173,18 @@ const PromoNumbers = () => {
         </Box>
       </Box>
       <Box>
+        <Typography
+          variant="h4"
+          align={'center'}
+          data-aos={'fade-up'}
+          gutterBottom
+          sx={{
+            fontWeight: 700,
+          }}
+        >
+          What we aim to achieve together at AyClass
+          
+        </Typography>
         <Grid container spacing={4}>
           {mock.map((item, i) => (
             <Grid item xs={12} sm={6} md={3} key={i}>
