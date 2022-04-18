@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as yup from 'yup';
 import Box from '@mui/material/Box';
@@ -8,6 +9,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import * as AyClassApi from '../../../../utilities/AyClassApiClient';
 
 const validationSchema = yup.object({
   email: yup
@@ -27,8 +29,16 @@ const Form = () => {
     password: '',
   };
 
-  const onSubmit = (values) => {
-    return values;
+  const navigate = useNavigate();
+
+  const onSubmit = async (values) => {
+    let response = await AyClassApi.Login(values.email, values.password);
+    if(response.success){
+      navigate('/');
+    }
+    else{
+      console.log(response.body);
+    }
   };
 
   const formik = useFormik({

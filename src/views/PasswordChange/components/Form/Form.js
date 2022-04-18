@@ -9,22 +9,24 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import * as AyClassApi from '../../../../utilities/AyClassApiClient';
+import {useParams} from 'react-router-dom';
 
 const validationSchema = yup.object({
-  email: yup
+  password: yup
     .string()
-    .trim()
-    .email('Please enter a valid email address')
-    .required('Email is required.'),
+    .required('Please specify your password')
+    .min(8, 'The password should have at minimum length of 8'),
 });
 
 const Form = () => {
+  let params = useParams();
+
   const initialValues = {
-    email: '',
+    password: '',
   };
 
   const onSubmit = async (value) => {
-    let response = await AyClassApi.ForgotPassword(value.email);
+    let response = await AyClassApi.ChangePassword(value.password,params['*']);
     if(response.success){
       console.log(response.body);
     }
@@ -43,42 +45,29 @@ const Form = () => {
     <Box>
       <Box marginBottom={4}>
         <Typography
-          sx={{
-            textTransform: 'uppercase',
-            fontWeight: 'medium',
-          }}
-          gutterBottom
-          color={'text.secondary'}
-        >
-          Recover account
-        </Typography>
-        <Typography
           variant="h4"
           sx={{
             fontWeight: 700,
           }}
         >
-          Forgot your password?
-        </Typography>
-        <Typography color="text.secondary">
-          Enter your email address below and we'll get you back on track.
+          Reset your password
         </Typography>
       </Box>
       <form onSubmit={formik.handleSubmit}>
         <Grid container spacing={4}>
           <Grid item xs={12}>
             <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
-              Enter your email
+              Enter your new password
             </Typography>
             <TextField
-              label="Email *"
+              label="New Password"
               variant="outlined"
-              name={'email'}
+              name={'password'}
               fullWidth
-              value={formik.values.email}
+              value={formik.values.password}
               onChange={formik.handleChange}
-              error={formik.touched.email && Boolean(formik.errors.email)}
-              helperText={formik.touched.email && formik.errors.email}
+              error={formik.touched.password && Boolean(formik.errors.password)}
+              helperText={formik.touched.password && formik.errors.password}
             />
           </Grid>
           <Grid item container xs={12}>
@@ -96,15 +85,14 @@ const Form = () => {
                   size={'large'}
                   variant={'outlined'}
                   component={Link}
-                  href={'/signin-cover'}
+                  href={'/signin-simple'}
                   fullWidth
-                  color={'secondary'}
                 >
                   Back to login
                 </Button>
               </Box>
               <Button size={'large'} variant={'contained'} type={'submit'}>
-                Send reset link
+                Save password
               </Button>
             </Box>
           </Grid>

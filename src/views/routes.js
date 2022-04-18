@@ -37,6 +37,8 @@ import {
   SearchTutor as SearchTutorView,
   BlogNewsroom as BlogNewsroomView,
   BlogArticle as BlogArticleView,
+  BlogReachView as BlogReachViewView,
+  PasswordChange as PasswordChangeView,
   BookTutor as BookTutorView,
   PasswordResetCover as PasswordResetCoverView,
   PasswordResetSimple as PasswordResetSimpleView,
@@ -208,6 +210,10 @@ const routes = [
   {
     path: '/book-tutor',
     renderer: (params = {}) => <BookTutorView {...params} />,
+  },
+  {
+    path:'/password-change/*',
+    renderer: (params = {}) => <PasswordChangeView {...params} />
   },
   {
     path: '/password-reset-cover',
