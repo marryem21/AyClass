@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import { alpha, useTheme } from '@mui/material/styles';
+import logoLight from '../../../../images/logomove.png';
+import logoDark from '../../../../images/logo.png';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import { ThemeModeToggler } from './components';
@@ -23,15 +25,15 @@ const Topbar = ({ onSidebarOpen }) => {
         display={'flex'}
         component="a"
         href="/"
-        title="theFront"
+        title="AyClass"
         width={{ xs: 100, md: 120 }}
       >
         <Box
           component={'img'}
           src={
             mode === 'light'
-              ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-              : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+              ? logoLight
+              : logoDark
           }
           height={1}
           width={1}
@@ -47,46 +49,44 @@ const Topbar = ({ onSidebarOpen }) => {
           <Link
             underline="none"
             component="a"
-            href="/home"
+            href="/book-tutor"
             color="text.primary"
           >
-            Pages
+            Book tutor
           </Link>
         </Box>
         <Box marginLeft={3}>
           <Link
             underline="none"
             component="a"
-            href="/blocks"
+            href="/"
             color="text.primary"
           >
-            Components
+            Become tutor
           </Link>
         </Box>
         <Box marginLeft={3}>
           <Link
             underline="none"
             component="a"
-            href="/demos"
+            href="/"
             color="text.primary"
           >
-            Demos
+            About us
           </Link>
         </Box>
         <Box marginLeft={3}>
           <ThemeModeToggler />
         </Box>
         <Box marginLeft={3}>
-          <Button
-            variant="contained"
-            color="primary"
+          <Link
+            underline="none"
             component="a"
-            target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
-            size="large"
+            href="/"
+            color="text.primary"
           >
-            Purchase now
-          </Button>
+            Contact us
+          </Link>
         </Box>
       </Box>
       <Box sx={{ display: { xs: 'flex', md: 'none' } }} alignItems={'center'}>

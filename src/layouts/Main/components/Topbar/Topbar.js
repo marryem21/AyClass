@@ -7,18 +7,17 @@ import MenuIcon from '@mui/icons-material/Menu';
 import logoLight from '../../../../images/logomove.png';
 import logoDark from '../../../../images/logo.png';
 import Link from '@mui/material/Link';
+import { ThemeModeToggler } from './ThemeModeToggler';
 
 const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
   const theme = useTheme();
   const { mode } = theme.palette;
-
   return (
     <Box
       display={'flex'}
       justifyContent={'space-between'}
       alignItems={'center'}
       width={1}
-      
     >
       <Box
         display={'flex'}
@@ -142,6 +141,9 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
           Signin
           </Link>
         </Box>
+        <Box marginRight={1}>
+          <ThemeModeToggler />
+        </Box>
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>
         <Button
@@ -161,7 +163,6 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
     </Box>
   );
 };
-
 Topbar.propTypes = {
   onSidebarOpen: PropTypes.func,
   colorInvert: PropTypes.bool,
