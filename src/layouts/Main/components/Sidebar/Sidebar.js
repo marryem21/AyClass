@@ -4,7 +4,7 @@ import Drawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
 import { SidebarNav } from './components';
 
-const Sidebar = ({ open, onClose }) => {
+const Sidebar = ({ open,onClose }) => {
   return (
     <Drawer
       anchor="left"
