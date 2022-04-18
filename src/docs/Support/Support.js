@@ -29,7 +29,7 @@ const Support = () => {
               href="mailto:hi@maccarianagency.com"
               color={'primary'}
             >
-              hi@maccarianagency.com
+              contactus@ayclass.com
             </Link>
             .
           </Typography>

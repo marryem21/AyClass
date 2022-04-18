@@ -88,7 +88,7 @@ export const getAllStudents = async () => {
 };
 
 export const RegisterNewStudent = async (student) => {
-  const url = 'https://localhost:7223/api/Students'; // change 
+  const url = 'https://localhost:180/api/Students'; // change 
 
   return await executePostRequest(url,student);
 };

@@ -9,36 +9,40 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Avatar from '@mui/material/Avatar';
+import StarIcon from '@mui/icons-material/Star';
+import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
+
+
 
 const mock = [
   {
-    image: 'https://assets.maccarianagency.com/backgrounds/img23.jpg',
+    image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
     description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem',
-    title: 'Eiusmod tempor incididunt',
+    <div><StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarIcon/></div>,
+    title: 'Software engineer',
     author: {
-      name: 'Clara Bertoletti',
-      avatar: 'https://assets.maccarianagency.com/avatars/img1.jpg',
+      name: 'Samira Ben Youssef',
+      avatar: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
     },
   },
   {
-    image: 'https://assets.maccarianagency.com/backgrounds/img24.jpg',
-    description: 'At vero eos et accusamus et iusto odio dignissimos ducimus',
-    title: 'Sed ut perspiciatis',
+    image: 'https://images.unsplash.com/photo-1573496799515-eebbb63814f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
+    description: <div><StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarBorderOutlinedIcon/></div>,
+    title: 'Front-end Developer',
     author: {
-      name: 'Jhon Anderson',
-      avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
+      name: 'Zaineb Jerbi',
+      avatar: 'https://images.unsplash.com/photo-1573496799515-eebbb63814f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80',
     },
     date: '02 Aug',
   },
   {
-    image: 'https://assets.maccarianagency.com/backgrounds/img25.jpg',
+    image: 'https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
     description:
-      'Qui blanditiis praesentium voluptatum deleniti atque corrupti',
-    title: 'Unde omnis iste natus',
+    <div><StarIcon/><StarIcon/><StarIcon/><StarBorderOutlinedIcon/><StarBorderOutlinedIcon/></div>,
+    title: 'Technicien superieur en genie logiciel',
     author: {
-      name: 'Chary Smith',
-      avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
+      name: 'Chams Labyedh',
+      avatar: 'https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
     },
     date: '05 Mar',
   },
@@ -47,20 +51,21 @@ const mock = [
 const SimilarStories = () => {
   const theme = useTheme();
   return (
-    <Box>
+    <Box >
       <Box
         display={'flex'}
         justifyContent={'space-between'}
         alignItems={{ xs: 'flex-start', sm: 'center' }}
         flexDirection={{ xs: 'column', sm: 'row' }}
         marginBottom={4}
+
       >
         <Box>
           <Typography fontWeight={700} variant={'h6'} gutterBottom>
-            Similar stories
+            More IT tutors
           </Typography>
           <Typography color={'text.secondary'}>
-            Here’s what we’ve been up to recently.
+            Check more of our tutors
           </Typography>
         </Box>
         <Box display="flex" marginTop={{ xs: 2, md: 0 }}>

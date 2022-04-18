@@ -33,7 +33,7 @@ const Story = () => {
               only serve as marketing platforms but also provide solutions to
               online business problems and digital marketing strategies that
               connect you with the ideal client and help create a loyal
-              customer.
+              customer. 
             </Typography>
           </Box>
         </Grid>

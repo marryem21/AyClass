@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   Home as HomeView,
   Customers as CustomersView,
@@ -35,11 +34,12 @@ import {
   ContactPageSidebarMap as ContactPageSidebarMapView,
   ContactPageCover as ContactPageCoverView,
   AboutSideCover as AboutSideCoverView,
-  BlogSearch as BlogSearchView,
+  SearchTutor as SearchTutorView,
   BlogNewsroom as BlogNewsroomView,
   BlogArticle as BlogArticleView,
   BlogReachView as BlogReachViewView,
   PasswordChange as PasswordChangeView,
+  BookTutor as BookTutorView,
   PasswordResetCover as PasswordResetCoverView,
   PasswordResetSimple as PasswordResetSimpleView,
   SigninSimple as SigninSimpleView,
@@ -196,8 +196,8 @@ const routes = [
     renderer: (params = {}) => <PricingView {...params} />,
   },
   {
-    path: '/blog-search',
-    renderer: (params = {}) => <BlogSearchView {...params} />,
+    path: '/search-tutor',
+    renderer: (params = {}) => <SearchTutorView {...params} />,
   },
   {
     path: '/blog-newsroom',
@@ -208,8 +208,8 @@ const routes = [
     renderer: (params = {}) => <BlogArticleView {...params} />,
   },
   {
-    path: '/blog-reach-view',
-    renderer: (params = {}) => <BlogReachViewView {...params} />,
+    path: '/book-tutor',
+    renderer: (params = {}) => <BookTutorView {...params} />,
   },
   {
     path:'/password-change/*',

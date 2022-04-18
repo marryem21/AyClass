@@ -6,20 +6,11 @@ import { alpha, useTheme } from '@mui/material/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import logoLight from '../../../../images/logomove.png';
 import logoDark from '../../../../images/logo.png';
+import Link from '@mui/material/Link';
 
-import { NavItem } from './components';
-
-const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
+const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
   const theme = useTheme();
   const { mode } = theme.palette;
-  const {
-    landings: landingPages,
-    secondary: secondaryPages,
-    company: companyPages,
-    account: accountPages,
-    portfolio: portfolioPages,
-    blog: blogPages,
-  } = pages;
 
   return (
     <Box
@@ -27,7 +18,6 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
       justifyContent={'space-between'}
       alignItems={'center'}
       width={1}
-      
     >
       <Box
         display={'flex'}
@@ -35,69 +25,120 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
         href="/"
         title="AyClass"
         width={{ xs: 200, md: 150 }}
-        sx={{zoom:'140%'}}
       >
-        <Box 
-          
+        <Box
           component={'img'}
           src={
             mode === 'light' && !colorInvert
-              ? logoLight
+              ?logoLight
               : logoDark
           }
           height={1}
           width={1}
-         
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
-          <NavItem
-            title={'Become Tutor'}
-            id={'become-tutor'}
-            items={landingPages}
-            colorInvert={colorInvert}
-          />
+          <Link
+            href={'#'}
+            underline={'none'}
+            color={'text.primary'}
+            sx={{
+              display: 'flex',
+              p: 1,
+              borderRadius: 1,
+              '&:hover': {
+                bgcolor: 'alternate.main',
+              },
+            }}
+          >
+          Become tutor
+          </Link>
         </Box>
         <Box marginLeft={4}>
-          <NavItem
-            title={'Subjects'}
-            id={'subjects'}
-            items={companyPages}
-            colorInvert={colorInvert}
-          />
+          <Link
+            href={'/book-tutor'}
+            underline={'none'}
+            color={'text.primary'}
+            sx={{
+              display: 'flex',
+              p: 1,
+              borderRadius: 1,
+              '&:hover': {
+                bgcolor: 'alternate.main',
+              },
+            }}
+          >
+          Book tutor
+          </Link>
         </Box>
         <Box marginLeft={4}>
-          <NavItem
-            title={'About Us'}
-            id={'account-pages'}
-            items={accountPages}
-            colorInvert={colorInvert}
-          />
+          <Link
+            href={'/about-us'}
+            underline={'none'}
+            color={'text.primary'}
+            sx={{
+              display: 'flex',
+              p: 1,
+              borderRadius: 1,
+              '&:hover': {
+                bgcolor: 'alternate.main',
+              },
+            }}
+          >
+          About us
+          </Link>
         </Box>
         <Box marginLeft={4}>
-          <NavItem
-            title={'Sign Up'}
-            id={'secondary-pages'}
-            items={secondaryPages}
-            colorInvert={colorInvert}
-          />
+          <Link
+            href={'/contact-us'}
+            underline={'none'}
+            color={'text.primary'}
+            sx={{
+              display: 'flex',
+              p: 1,
+              borderRadius: 1,
+              '&:hover': {
+                bgcolor: 'alternate.main',
+              },
+            }}
+          >
+          Contact us
+          </Link>
         </Box>
         <Box marginLeft={4}>
-          <NavItem
-            title={'Sign In'}
-            id={'blog-pages'}
-            items={blogPages}
-            colorInvert={colorInvert}
-          />
+          <Link
+            href={'/signup-cover'}
+            underline={'none'}
+            color={'text.primary'}
+            sx={{
+              display: 'flex',
+              p: 1,
+              borderRadius: 1,
+              '&:hover': {
+                bgcolor: 'alternate.main',
+              },
+            }}
+          >
+          Signup
+          </Link>
         </Box>
         <Box marginLeft={4}>
-          <NavItem
-            title={'Contact Us'}
-            id={'portfolio-pages'}
-            items={portfolioPages}
-            colorInvert={colorInvert}
-          />
+          <Link
+            href={'/signin-cover'}
+            underline={'none'}
+            color={'text.primary'}
+            sx={{
+              display: 'flex',
+              p: 1,
+              borderRadius: 1,
+              '&:hover': {
+                bgcolor: 'alternate.main',
+              },
+            }}
+          >
+          Signin
+          </Link>
         </Box>
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>
@@ -121,7 +162,6 @@ const Topbar = ({ onSidebarOpen, pages, colorInvert = false }) => {
 
 Topbar.propTypes = {
   onSidebarOpen: PropTypes.func,
-  pages: PropTypes.object,
   colorInvert: PropTypes.bool,
 };
 

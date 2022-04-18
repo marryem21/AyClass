@@ -13,22 +13,22 @@ import Container from 'components/Container';
 
 const mock = [
   {
-    name: 'Clara Bertoletti',
+    name: 'Kamel Touati',
     title: 'Junior Designer',
     avatar: 'https://assets.maccarianagency.com/avatars/img1.jpg',
   },
   {
-    name: 'Jhon Anderson',
+    name: 'Seyf Abdeloaui',
     title: 'Senior Frontend Developer',
     avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
   },
   {
-    name: 'Chary Smith',
+    name: 'Samar yaagoub',
     title: 'SEO at Comoti',
     avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
   },
   {
-    name: 'Clara Bertoletti',
+    name: 'Fatma mahmoud',
     title: 'Junior Designer',
     avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
   },
