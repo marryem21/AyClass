@@ -15,7 +15,7 @@ const Hero = () => {
           'url("https://www.superprof.co.uk/blog/wp-content/uploads/2018/06/teaching-online.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        marginTop: -13,
+        marginTop: 0,
         paddingTop: 13,
         '&:after': {
           position: 'absolute',

@@ -7,7 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import logoLight from '../../../../images/logomove.png';
 import logoDark from '../../../../images/logo.png';
 import Link from '@mui/material/Link';
-import { ThemeModeToggler } from './ThemeModeToggler';
+import TopNav from 'components/TopNav';
 
 const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
   const theme = useTheme();
@@ -25,7 +25,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
         href="/"
         title="AyClass"
         width={{ xs: 200, md: 150 }}
-        sx={{zoom:'140%'}}
+        sx={{zoom:'90%'}}
       >
         <Box
           component={'img'}
@@ -41,7 +41,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <Link
-            href={'#'}
+            href={'/hire-us'}
             underline={'none'}
             color={'text.primary'}
             sx={{
@@ -75,7 +75,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
         </Box>
         <Box marginLeft={4}>
           <Link
-            href={'/about-us'}
+            href={'/about'}
             underline={'none'}
             color={'text.primary'}
             sx={{
@@ -92,7 +92,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
         </Box>
         <Box marginLeft={4}>
           <Link
-            href={'/contact-us'}
+            href={'/contact-page'}
             underline={'none'}
             color={'text.primary'}
             sx={{
@@ -141,8 +141,10 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
           Signin
           </Link>
         </Box>
-        <Box marginRight={1}>
-          <ThemeModeToggler />
+        <Box
+          marginLeft={4}
+        >
+          <TopNav />
         </Box>
       </Box>
       <Box sx={{ display: { xs: 'block', md: 'none' } }} alignItems={'center'}>

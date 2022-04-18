@@ -59,7 +59,7 @@ const Topbar = ({ onSidebarOpen }) => {
           <Link
             underline="none"
             component="a"
-            href="/"
+            href="/hire-us"
             color="text.primary"
           >
             Become tutor
@@ -69,7 +69,7 @@ const Topbar = ({ onSidebarOpen }) => {
           <Link
             underline="none"
             component="a"
-            href="/"
+            href="/about"
             color="text.primary"
           >
             About us
@@ -82,7 +82,7 @@ const Topbar = ({ onSidebarOpen }) => {
           <Link
             underline="none"
             component="a"
-            href="/"
+            href="/contact-page"
             color="text.primary"
           >
             Contact us

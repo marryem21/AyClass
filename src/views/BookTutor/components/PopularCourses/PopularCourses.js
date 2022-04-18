@@ -63,6 +63,16 @@ const mock = [
     },
     date: '05 Mar',
   },
+  {
+    image: 'https://media.istockphoto.com/photos/web-design-desktop-picture-id1305999733?b=1&k=20&m=1305999733&s=170667a&w=0&h=3DeafNR4TJ7eSqHvBFkVRwNbnBrZxpj6RlaqbeiIAfs=',
+    description: 'Learn how to design your portals to look trendy and modern!',
+    title: 'Web Design Basics',
+    author: {
+      name: 'Jhenna Riahi',
+      avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
+    },
+    date: '04 Jan',
+  },
 ];
 
 const PopularCourses = () => {
@@ -98,7 +108,7 @@ const PopularCourses = () => {
       </Box>
       <Grid container spacing={4}>
         {mock.map((item, i) => (
-          <Grid item xs={12} sm={i === 0 ? 12 : 6} md={i < 2 ? 6 : 4} key={i}>
+          <Grid item xs={12} sm={6} md={4} key={i}>
             <Box
               component={'a'}
               href={''}
@@ -190,7 +200,7 @@ const PopularCourses = () => {
           </Grid>
         ))}
         <Grid item container justifyContent={'center'} xs={12}>
-          <Pagination count={10} size={'large'} color="primary" />
+          <Pagination count={2} size={'large'} color="primary" />
         </Grid>
       </Grid>
     </Box>
