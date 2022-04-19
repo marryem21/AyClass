@@ -82,43 +82,43 @@ const executePostRequest = async (url, entity) => {
 };
 
 export const getAllStudents = async () => {
-  const url = 'https://localhost:7223/api/Students';
+  const url = 'http://localhost:7223/api/Students';
 
   return await executeGetRequest(url);
 };
 
 export const RegisterNewStudent = async (student) => {
-  const url = 'https://localhost:180/api/Students'; // change 
+  const url = 'http://localhost:180/api/Students'; // change 
 
   return await executePostRequest(url,student);
 };
 
 export const Login = async (email,password) => {
-  const url = `https://localhost:7223/api/Students/Login?email=${email}&password=${password}`;
+  const url = `http://localhost:7223/api/Students/Login?email=${email}&password=${password}`;
 
   return await executePostRequest(url);
 };
 
 export const Authenticate = async () => {
-  const url = 'https://localhost:7223/api/Students/Authenticate';
+  const url = 'http://localhost:7223/api/Students/Authenticate';
 
   return await executeGetRequest(url);
 };
 
 export const Logout = async () => {
-  const url = 'https://localhost:7223/api/Students/Logout';
+  const url = 'http://localhost:7223/api/Students/Logout';
 
   return await executePostRequest(url);
 };
 
 export const ChangePassword = async (newPassword,secret) => {
-  const url = `https://localhost:7223/api/Students/ChangePassword/${secret}`;
+  const url = `http://localhost:7223/api/Students/ChangePassword/${secret}`;
 
   return await executePostRequest(url,newPassword);
 };
 
 export const ForgotPassword = async (email) => {
-  const url = `https://localhost:7223/api/Students/ForgotPassword?email=${email}`;
+  const url = `http://localhost:7223/api/Students/ForgotPassword?email=${email}`;
 
   return await executeGetRequest(url);
 };
