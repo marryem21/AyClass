@@ -36,7 +36,6 @@ export { default as AboutSideCover } from './AboutSideCover';
 export { default as SearchTutor } from './SearchTutor';
 export { default as BlogNewsroom } from './BlogNewsroom';
 export { default as BlogArticle } from './BlogArticle';
-export { default as BlogReachView } from './BlogReachView';
 export {default as PasswordChange} from './PasswordChange';
 export { default as BookTutor } from './BookTutor';
 export { default as PasswordResetCover } from './PasswordResetCover';

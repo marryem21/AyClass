@@ -37,7 +37,6 @@ import {
   SearchTutor as SearchTutorView,
   BlogNewsroom as BlogNewsroomView,
   BlogArticle as BlogArticleView,
-  BlogReachView as BlogReachViewView,
   PasswordChange as PasswordChangeView,
   BookTutor as BookTutorView,
   PasswordResetCover as PasswordResetCoverView,
