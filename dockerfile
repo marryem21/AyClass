@@ -16,4 +16,4 @@ RUN yarn install --frozen-lockfile --network-timeout 100000
 COPY . ./
 EXPOSE 3000
 # start app
-CMD ["yarn", "start"]
+CMD HTTPS=true yarn start
