@@ -13,6 +13,7 @@ import Container from 'components/Container';
 import { Topbar, Sidebar, Footer } from './components';
 
 import pages from '../navigation';
+import TopNav from 'components/TopNav';
 
 const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
   const theme = useTheme();
@@ -48,6 +49,7 @@ const Main = ({ children, colorInvert = false, bgcolor = 'transparent' }) => {
         }}
         elevation={trigger ? 1 : 0}
       >
+        <TopNav />
         <Container paddingY={1}>
           <Topbar
             onSidebarOpen={handleSidebarOpen}

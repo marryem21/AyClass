@@ -8,7 +8,6 @@ import StarIcon from '@mui/icons-material/Star';
 import Avatar from '@mui/material/Avatar';
 import Main from 'layouts/Main';
 import Container from 'components/Container';
-// import useState from 'react';
 import {
   Content,
   FooterNewsletter,
@@ -18,17 +17,14 @@ import {
 import { Typography } from '@mui/material';
 
 const BlogArticle = () => {
-  // const [isTutor,setIsTutor]=useState(false);
   const isTutor=true;
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
-
   return (
     <Main colorInvert={false}>
       <Box>
-        
         <Container>
           <Container display={'flex'} position={'relative'} zIndex={2}>
             <Avatar
@@ -49,25 +45,15 @@ const BlogArticle = () => {
                 Samir Hamdi
               </Typography>
               <Box>
-{               <Typography
+                <Typography
                   variant={'h7'}
                   color={'secondary'}
                 >
                   ISSAT Sousse 
-                </Typography>}
-              </Box>
-              <Box>
-                <Typography
-                  variant={'h8'}
-                  color={'secondary'}
-                >
-                  Why does this stick
                 </Typography>
               </Box>
             </Box>     
-            
             {isTutor && (<Box marginLeft={'600px'}>    
-            
               <StarIcon/><StarIcon/><StarIcon/><StarIcon/><StarIcon/>
               <Box display={'flex'}>
                 <Typography
@@ -89,15 +75,13 @@ const BlogArticle = () => {
                 </Typography>
               </Box>
               <Button  
-                
                 size={'large'} 
                 variant={'contained'} 
                 type={'submit'}
                 sx={{marginTop:3}}  
               >
                     Book Now
-              </Button>
-              
+              </Button> 
             </Box>)}
           </Container>
           <Grid container spacing={4}>
@@ -159,5 +143,4 @@ const BlogArticle = () => {
     </Main>
   );
 };
-
 export default BlogArticle;
