@@ -3,3 +3,4 @@ to run the application you can:
 # open it in your text editor
 # open command line and type: yarn install
 # run : yarn start
+link to demo : https://youtu.be/OYktdBB0-UU
