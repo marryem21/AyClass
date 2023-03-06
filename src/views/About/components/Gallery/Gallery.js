@@ -89,8 +89,9 @@ const Gallery = () => {
           Small team. Big hearts.
         </Typography>
         <Typography variant="h6" align={'center'} color={'text.secondary'}>
-          Our focus is always on finding the best people to work with. Our bar
-          is high, but you look ready to take on the challenge.
+          We vowed to make education easier and accessible to
+          everyone,everywhere by providing affordable and personalized tutoring
+          services.
         </Typography>
       </Box>
       <Box display={'flex'} justifyContent={'flex-end'} marginBottom={2}>

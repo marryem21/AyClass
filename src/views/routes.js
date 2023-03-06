@@ -33,7 +33,6 @@ import {
   CompanyTerms as CompanyTermsView,
   ContactPageSidebarMap as ContactPageSidebarMapView,
   ContactPageCover as ContactPageCoverView,
-  AboutSideCover as AboutSideCoverView,
   SearchTutor as SearchTutorView,
   BlogNewsroom as BlogNewsroomView,
   BlogArticle as BlogArticleView,
@@ -187,10 +186,6 @@ const routes = [
     renderer: (params = {}) => <AboutView {...params} />,
   },
   {
-    path: '/about-side-cover',
-    renderer: (params = {}) => <AboutSideCoverView {...params} />,
-  },
-  {
     path: '/pricing',
     renderer: (params = {}) => <PricingView {...params} />,
   },
@@ -211,8 +206,8 @@ const routes = [
     renderer: (params = {}) => <BookTutorView {...params} />,
   },
   {
-    path:'/password-change/*',
-    renderer: (params = {}) => <PasswordChangeView {...params} />
+    path: '/password-change/*',
+    renderer: (params = {}) => <PasswordChangeView {...params} />,
   },
   {
     path: '/password-reset-cover',

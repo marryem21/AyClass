@@ -12,34 +12,29 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 
 const mock = [
   {
-    name: 'Clara Bertoletti',
+    name: 'Talel romdhan',
     title: 'MUI lover',
     avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
   },
   {
-    name: 'Jhon Anderson',
-    title: 'Senior Frontend Developer',
+    name: 'Mariem Hamdi',
+    title: 'Frontend Developer',
     avatar: 'https://assets.maccarianagency.com/avatars/img5.jpg',
   },
   {
-    name: 'Chary Smith',
-    title: 'SEO at Comoti',
+    name: 'Seyf ben yaagoub',
+    title: 'Software engineering student',
     avatar: 'https://assets.maccarianagency.com/avatars/img6.jpg',
   },
   {
-    name: 'Clara Bertoletti',
-    title: 'MUI lover',
+    name: 'Nouhaila Tahri',
+    title: 'Software engineering student',
     avatar: 'https://assets.maccarianagency.com/avatars/img1.jpg',
   },
   {
-    name: 'Jhon Anderson',
-    title: 'Senior Frontend Developer',
-    avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
-  },
-  {
-    name: 'Chary Smith',
-    title: 'SEO at Comoti',
-    avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
+    name: 'Hadil abedlaoui',
+    title: 'Software engineering student',
+    avatar: 'https://assets.maccarianagency.com/avatars/img1.jpg',
   },
 ];
 
@@ -72,8 +67,9 @@ const Team = () => {
           Small team. Big hearts.
         </Typography>
         <Typography variant="h6" align={'center'} color={'text.secondary'}>
-          Our focus is always on finding the best people to work with. Our bar
-          is high, but you look ready to take on the challenge.
+          We vowed to make education easier and accessible to
+          everyone,everywhere by providing affordable and personalized tutoring
+          services.
         </Typography>
       </Box>
       <Grid container spacing={2}>

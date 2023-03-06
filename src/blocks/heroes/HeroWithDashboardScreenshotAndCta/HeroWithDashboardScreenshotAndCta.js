@@ -44,8 +44,6 @@ const HeroWithDashboardScreenshotAndCta = () => {
             </Box>
             <Box marginBottom={3}>
               <Typography variant="h6" component="p" color="text.secondary">
-                World developers use our theFront theme to build their internal
-                tools and client admin applications.
                 <br />
                 Save yourself time and money.
               </Typography>

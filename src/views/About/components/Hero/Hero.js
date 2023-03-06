@@ -86,8 +86,9 @@ const Hero = () => {
               color: 'common.white',
             }}
           >
-            We are founded by a leading academic and researcher in the field of
-            Industrial Systems Engineering.
+            We vowed to make education easier and accessible to
+            everyone,everywhere by providing affordable and personalized
+            tutoring services.
           </Typography>
         </Box>
       </Container>

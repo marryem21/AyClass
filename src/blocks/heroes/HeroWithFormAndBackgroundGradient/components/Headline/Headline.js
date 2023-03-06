@@ -14,7 +14,7 @@ const Headline = () => {
           color: 'common.white',
         }}
       >
-        Join the world's leading companies at TheFront 2021
+        Join the world's leading companies
       </Typography>
       <Typography
         variant="h6"
@@ -26,11 +26,10 @@ const Headline = () => {
         }}
       >
         Whether it’s Porsche, Stripe, Intercom, Amazon, or Google, something
-        about TheFront works for our global partners.
+        about works for our global partners.
         <br />
         Want more information? Download our overview and a member of our
-        specialist team will be in touch to talk about your goals for TheFront
-        2021.
+        specialist team will be in touch to talk about your goals. 2021.
       </Typography>
     </Box>
   );

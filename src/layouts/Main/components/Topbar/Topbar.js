@@ -28,11 +28,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
       >
         <Box
           component={'img'}
-          src={
-            mode === 'light' && !colorInvert
-              ?logoLight
-              : logoDark
-          }
+          src={mode === 'light' && !colorInvert ? logoLight : logoDark}
           height={1}
           width={1}
         />
@@ -40,7 +36,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box>
           <Link
-            href={'#'}
+            href={'/blog-article'}
             underline={'none'}
             color={'text.primary'}
             sx={{
@@ -52,7 +48,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
               },
             }}
           >
-          Become tutor
+            Tutor of the month
           </Link>
         </Box>
         <Box marginLeft={4}>
@@ -69,12 +65,12 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
               },
             }}
           >
-          Book tutor
+            Book tutor
           </Link>
         </Box>
         <Box marginLeft={4}>
           <Link
-            href={'/about-us'}
+            href={'/about'}
             underline={'none'}
             color={'text.primary'}
             sx={{
@@ -86,7 +82,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
               },
             }}
           >
-          About us
+            About us
           </Link>
         </Box>
         <Box marginLeft={4}>
@@ -103,7 +99,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
               },
             }}
           >
-          Contact us
+            Contact us
           </Link>
         </Box>
         <Box marginLeft={4}>
@@ -120,7 +116,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
               },
             }}
           >
-          Signup
+            Signup
           </Link>
         </Box>
         <Box marginLeft={4}>
@@ -137,7 +133,7 @@ const Topbar = ({ onSidebarOpen, colorInvert = false }) => {
               },
             }}
           >
-          Signin
+            Signin
           </Link>
         </Box>
       </Box>

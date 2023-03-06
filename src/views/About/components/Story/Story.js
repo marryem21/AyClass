@@ -21,19 +21,17 @@ const Story = () => {
               Our story
             </Typography>
             <Typography component={'p'}>
-              Our focus is always on finding the best people to work with. Our
+              Our focus is always on finding the best tutors to help you. Our
               bar is high, but you look ready to take on the challenge.
               <br />
-              We design and implement creative solutions to everyday business
-              problems.
+              We provide the best tutors in all over Tunisian capuses to give
+              you high-quality services.
               <br />
               <br />
-              We are a team of creative consultants who help bridge the digital
-              gap between companies and their clients with websites that not
-              only serve as marketing platforms but also provide solutions to
-              online business problems and digital marketing strategies that
-              connect you with the ideal client and help create a loyal
-              customer. 
+              We are a team of creative students who help bridge the academic
+              gap between students and their colleagues with website that not
+              only serve as a tutoring platform but also provide solutions to
+              struggling student with lack of quality education.
             </Typography>
           </Box>
         </Grid>
